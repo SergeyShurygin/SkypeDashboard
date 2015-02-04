@@ -4,7 +4,7 @@
   <DataConnections>
     <DataConnection Name="mainConnection" ProviderKey="SQLite">
       <Parameters>
-        <Parameter Name="database" Value="C:\Users\Shurygin.Sergey\AppData\Roaming\Skype\shurgout\main.db" />
+        <Parameter Name="database" Value="C:\Users\Shurygin.Sergey\AppData\Roaming\skype\Write_your_name_here\main.db" />
         <Parameter Name="read only" Value="1" />
         <Parameter Name="generateConnectionHelper" Value="false" />
       </Parameters>
@@ -12,7 +12,7 @@
   </DataConnections>
   <DataSources>
     <DataSource ComponentName="dataSource3" Name="Messages" DataProcessingMode="Client">
-      <DataProvider DataConnection="mainConnection" Sql="select [Messages].[id], [Messages].[from_dispname], [Messages].[chatmsg_type],&#xD;&#xA;       [Messages].[chatmsg_status], [Chats].[topic], datetime([Messages].[timestamp] ,'unixepoch')  timestamp,&#xD;&#xA;       [Messages].[body_xml]&#xD;&#xA;  from [Messages] [Messages]&#xD;&#xA;  inner join [Chats] [Chats] on ([Chats].[name] = [Messages].[chatname])&#xD;&#xA;where topic &lt;&gt;&quot;mtbtula Racing Chat&quot; and topic &lt;&gt;&quot;Макряк-Чат&quot;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;">
+      <DataProvider DataConnection="mainConnection" Sql="select [Messages].[id], [Messages].[from_dispname], [Messages].[chatmsg_type],&#xD;&#xA;       [Messages].[chatmsg_status], [Chats].[topic], datetime([Messages].[timestamp] ,'unixepoch')  timestamp,&#xD;&#xA;       [Messages].[body_xml]&#xD;&#xA;  from [Messages] [Messages]&#xD;&#xA;  inner join [Chats] [Chats] on ([Chats].[name] = [Messages].[chatname])">
         <Selection>
           <Table Name="Messages">
             <Columns>
