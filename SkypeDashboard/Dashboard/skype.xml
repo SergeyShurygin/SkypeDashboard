@@ -11,7 +11,7 @@
     </DataConnection>
   </DataConnections>
   <DataSources>
-    <DataSource ComponentName="dataSource3" Name="Data Source 3" DataProcessingMode="Client">
+    <DataSource ComponentName="dataSource3" Name="Messages" DataProcessingMode="Client">
       <DataProvider DataConnection="mainConnection" Sql="select [Messages].[id], [Messages].[from_dispname], [Messages].[chatmsg_type],&#xD;&#xA;       [Messages].[chatmsg_status], [Chats].[topic], datetime([Messages].[timestamp] ,'unixepoch')  timestamp,&#xD;&#xA;       [Messages].[body_xml]&#xD;&#xA;  from [Messages] [Messages]&#xD;&#xA;  inner join [Chats] [Chats] on ([Chats].[name] = [Messages].[chatname])&#xD;&#xA;where topic &lt;&gt;&quot;mtbtula Racing Chat&quot; and topic &lt;&gt;&quot;Макряк-Чат&quot;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;">
         <Selection>
           <Table Name="Messages">
@@ -41,15 +41,15 @@
         </Selection>
       </DataProvider>
       <CalculatedFields>
-        <CalculatedField Name="Calculated Field 1" Expression="[timestamp]" DataType="DateTime" />
+        <CalculatedField Name="datetime" Expression="[timestamp]" DataType="DateTime" />
       </CalculatedFields>
     </DataSource>
   </DataSources>
   <Items>
-    <Grid ComponentName="gridDashboardItem2" Name="Message history" DataSource="dataSource3">
+    <Grid ComponentName="gridDashboardItem2" Name="Message History" DataSource="dataSource3">
       <DataItems>
         <Dimension DataMember="body_xml" UniqueName="DataItem4" />
-        <Dimension DataMember="Calculated Field 1" DateTimeGroupInterval="DateHourMinute" UniqueName="DataItem3" />
+        <Dimension DataMember="datetime" DateTimeGroupInterval="DateHourMinute" UniqueName="DataItem3" />
         <Dimension DataMember="from_dispname" UniqueName="DataItem6" />
       </DataItems>
       <GridColumns>
@@ -65,11 +65,11 @@
       </GridColumns>
       <GridOptions ColumnWidthMode="Manual" WordWrap="true" />
     </Grid>
-    <Chart ComponentName="chartDashboardItem1" Name="Chart 1" DataSource="dataSource3">
+    <Chart ComponentName="chartDashboardItem1" Name="Messages by date" DataSource="dataSource3">
       <InteractivityOptions MasterFilterMode="Multiple" />
       <DataItems>
-        <Dimension DataMember="Calculated Field 1" DateTimeGroupInterval="MonthYear" UniqueName="DataItem0" />
-        <Dimension DataMember="from_dispname" ColoringMode="Hue" TopNEnabled="true" TopNShowOthers="true" TopNMeasure="DataItem3" UniqueName="DataItem1" />
+        <Dimension DataMember="datetime" DateTimeGroupInterval="MonthYear" UniqueName="DataItem0" />
+        <Dimension DataMember="from_dispname" ColoringMode="Hue" TopNEnabled="true" TopNShowOthers="true" TopNCount="8" TopNMeasure="DataItem3" UniqueName="DataItem1" />
         <Measure DataMember="id" SummaryType="Count" UniqueName="DataItem3" />
       </DataItems>
       <SeriesDimensions>
@@ -88,7 +88,7 @@
         </Pane>
       </Panes>
     </Chart>
-    <Chart ComponentName="chartDashboardItem2" Name="Top posters" DataSource="dataSource3" Rotated="true">
+    <Chart ComponentName="chartDashboardItem2" Name="Top Posters" DataSource="dataSource3" Rotated="true">
       <ColoringOptions MeasuresColoringMode="None" UseGlobalColors="false" />
       <InteractivityOptions MasterFilterMode="Multiple" />
       <DataItems>
@@ -112,12 +112,11 @@
         </Pane>
       </Panes>
     </Chart>
-    <Chart ComponentName="chartDashboardItem3" Name="Chart 2" DataSource="dataSource3">
-      <ColoringOptions UseGlobalColors="false" />
+    <Chart ComponentName="chartDashboardItem3" Name="Top Chats" DataSource="dataSource3">
       <InteractivityOptions MasterFilterMode="Multiple" />
       <DataItems>
         <Dimension DataMember="topic" SortByMeasure="DataItem1" TopNEnabled="true" TopNMeasure="DataItem1" UniqueName="DataItem0" />
-        <Dimension DataMember="from_dispname" UniqueName="DataItem2" />
+        <Dimension DataMember="from_dispname" TopNEnabled="true" TopNShowOthers="true" TopNCount="8" TopNMeasure="DataItem1" UniqueName="DataItem2" />
         <Measure DataMember="id" SummaryType="Count" UniqueName="DataItem1" />
       </DataItems>
       <SeriesDimensions>
@@ -134,6 +133,7 @@
             </Simple>
           </Series>
         </Pane>
+        <Pane Name="Pane 2" />
       </Panes>
     </Chart>
     <ListBox ComponentName="listBoxDashboardItem1" Name="List Box 1" ShowCaption="false" DataSource="dataSource3">
@@ -159,16 +159,16 @@
   </Items>
   <LayoutTree>
     <LayoutGroup>
-      <LayoutGroup Weight="11.75285426460712" Orientation="Vertical">
+      <LayoutGroup Weight="12.82740094022834" Orientation="Vertical">
         <LayoutItem DashboardItem="listBoxDashboardItem1" Weight="50" />
         <LayoutItem DashboardItem="listBoxDashboardItem2" Weight="50" />
       </LayoutGroup>
-      <LayoutGroup Weight="88.247145735392877">
-        <LayoutItem DashboardItem="chartDashboardItem2" Weight="34.55098934550989" />
-        <LayoutGroup Weight="65.44901065449011" Orientation="Vertical">
+      <LayoutGroup Weight="87.172599059771656">
+        <LayoutItem DashboardItem="chartDashboardItem2" Weight="35.670261941448381" />
+        <LayoutGroup Weight="64.329738058551612" Orientation="Vertical">
           <LayoutGroup Weight="56.219512195121951">
-            <LayoutItem DashboardItem="chartDashboardItem3" Weight="58.837209302325583" />
-            <LayoutItem DashboardItem="chartDashboardItem1" Weight="41.162790697674417" />
+            <LayoutItem DashboardItem="chartDashboardItem3" Weight="49.940119760479043" />
+            <LayoutItem DashboardItem="chartDashboardItem1" Weight="50.059880239520957" />
           </LayoutGroup>
           <LayoutItem DashboardItem="gridDashboardItem2" Weight="43.780487804878049" />
         </LayoutGroup>

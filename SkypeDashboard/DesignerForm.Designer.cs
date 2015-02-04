@@ -447,6 +447,7 @@
             this.dashboardDesigner1.PrintingOptions.FontInfo.Name = null;
             this.dashboardDesigner1.Size = new System.Drawing.Size(1181, 436);
             this.dashboardDesigner1.TabIndex = 0;
+            this.dashboardDesigner1.ConfigureDataConnection += new DevExpress.DataAccess.ConfigureDataConnectionEventHandler(this.dashboardDesigner1_ConfigureDataConnection);
             // 
             // ribbonControl1
             // 
