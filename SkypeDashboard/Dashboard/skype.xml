@@ -1,123 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Dashboard CurrencyCulture="en-US">
-  <Title Text="Dashboard" />
-  <DataConnections>
-    <DataConnection Name="mainConnection" ProviderKey="SQLite">
-      <Parameters>
-        <Parameter Name="database" Value="C:\Users\Shurygin.Sergey\AppData\Roaming\skype\Write_your_name_here\main.db" />
-        <Parameter Name="read only" Value="1" />
-        <Parameter Name="generateConnectionHelper" Value="false" />
-      </Parameters>
-    </DataConnection>
-  </DataConnections>
+  <Title Text="Skype History Analysis" />
   <DataSources>
-    <DataSource ComponentName="dataSource3" Name="Messages" DataProcessingMode="Client">
-      <DataProvider DataConnection="mainConnection" Sql="select [Messages].[id], [Messages].[from_dispname], [Messages].[chatmsg_type],&#xD;&#xA;       [Messages].[chatmsg_status], [Chats].[topic], datetime([Messages].[timestamp] ,'unixepoch')  timestamp,&#xD;&#xA;       [Messages].[body_xml]&#xD;&#xA;  from [Messages] [Messages]&#xD;&#xA;  inner join [Chats] [Chats] on ([Chats].[name] = [Messages].[chatname])">
-        <Selection>
-          <Table Name="Messages">
-            <Columns>
-              <Column Name="id" />
-              <Column Name="author" />
-              <Column Name="from_dispname" />
-              <Column Name="chatmsg_type" />
-              <Column Name="chatmsg_status" />
-            </Columns>
-          </Table>
-          <Table Name="Chats">
-            <References>
-              <Reference Key="name" ParentKey="chatname" ParentTable="Messages" />
-            </References>
-            <Columns>
-              <Column Name="friendlyname" />
-              <Column Name="dialog_partner" />
-              <Column Name="type" />
-              <Column Name="posters" />
-              <Column Name="topic" />
-            </Columns>
-          </Table>
-          <Filters>
-            <Filter TableName="Messages" FilterString="" />
-          </Filters>
-        </Selection>
-      </DataProvider>
-      <CalculatedFields>
-        <CalculatedField Name="datetime" Expression="[timestamp]" DataType="DateTime" />
-      </CalculatedFields>
-    </DataSource>
+    <EFDataSource Name="EF Data Source 1" ConnectionStringName="mainEntities" ConnectionString="" Source="SkypeDashboard.mainEntities, SkypeDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" ComponentName="dashboardEFDataSource1" />
   </DataSources>
   <Items>
-    <Grid ComponentName="gridDashboardItem2" Name="Message History" DataSource="dataSource3">
-      <DataItems>
-        <Dimension DataMember="body_xml" UniqueName="DataItem4" />
-        <Dimension DataMember="datetime" DateTimeGroupInterval="DateHourMinute" UniqueName="DataItem3" />
-        <Dimension DataMember="from_dispname" UniqueName="DataItem6" />
-      </DataItems>
-      <GridColumns>
-        <GridDimensionColumn Name="Date" Weight="31.260096930533116">
-          <Dimension UniqueName="DataItem3" />
-        </GridDimensionColumn>
-        <GridDimensionColumn Name="Author" Weight="41.437802907915994">
-          <Dimension UniqueName="DataItem6" />
-        </GridDimensionColumn>
-        <GridDimensionColumn Name="Message body" Weight="152.3021001615509">
-          <Dimension UniqueName="DataItem4" />
-        </GridDimensionColumn>
-      </GridColumns>
-      <GridOptions ColumnWidthMode="Manual" WordWrap="true" />
-    </Grid>
-    <Chart ComponentName="chartDashboardItem1" Name="Messages by date" DataSource="dataSource3">
+    <Chart ComponentName="chartDashboardItem2" Name="Top Posters" DataSource="dashboardEFDataSource1" DataMember="MessageList" Rotated="true">
+      <ColoringOptions MeasuresColoringMode="Hue" UseGlobalColors="false" />
       <InteractivityOptions MasterFilterMode="Multiple" />
       <DataItems>
-        <Dimension DataMember="datetime" DateTimeGroupInterval="MonthYear" UniqueName="DataItem0" />
-        <Dimension DataMember="from_dispname" ColoringMode="Hue" TopNEnabled="true" TopNShowOthers="true" TopNCount="8" TopNMeasure="DataItem3" UniqueName="DataItem1" />
-        <Measure DataMember="id" SummaryType="Count" UniqueName="DataItem3" />
+        <Dimension DataMember="Author" SortOrder="Descending" SortByMeasure="DataItem3" TopNEnabled="true" TopNShowOthers="true" TopNCount="15" TopNMeasure="DataItem3" UniqueName="DataItem0" />
+        <Measure DataMember="TextLength" UniqueName="DataItem2" />
+        <Measure DataMember="id" Name="Messages" SummaryType="Count" UniqueName="DataItem3" />
       </DataItems>
-      <SeriesDimensions>
-        <SeriesDimension UniqueName="DataItem1" />
-      </SeriesDimensions>
       <Arguments>
         <Argument UniqueName="DataItem0" />
       </Arguments>
       <Panes>
         <Pane Name="Pane 1">
+          <AxisY TitleVisible="false" />
           <Series>
-            <Simple SeriesType="StackedBar">
+            <Simple Name="Messages" PlotOnSecondaryAxis="true">
               <Value UniqueName="DataItem3" />
+            </Simple>
+            <Simple Name="Text Length">
+              <Value UniqueName="DataItem2" />
             </Simple>
           </Series>
         </Pane>
       </Panes>
     </Chart>
-    <Chart ComponentName="chartDashboardItem2" Name="Top Posters" DataSource="dataSource3" Rotated="true">
-      <ColoringOptions MeasuresColoringMode="None" UseGlobalColors="false" />
+    <Chart ComponentName="chartDashboardItem3" Name="Top Chats" DataSource="dashboardEFDataSource1" DataMember="MessageList">
+      <ColoringOptions UseGlobalColors="false" />
       <InteractivityOptions MasterFilterMode="Multiple" />
       <DataItems>
-        <Dimension DataMember="from_dispname" TopNEnabled="true" TopNCount="10" TopNMeasure="DataItem3" UniqueName="DataItem0" />
-        <Dimension DataMember="topic" SortByMeasure="DataItem3" UniqueName="DataItem4" />
-        <Measure DataMember="id" SummaryType="Count" UniqueName="DataItem3" />
-      </DataItems>
-      <SeriesDimensions>
-        <SeriesDimension UniqueName="DataItem4" />
-      </SeriesDimensions>
-      <Arguments>
-        <Argument UniqueName="DataItem0" />
-      </Arguments>
-      <Panes>
-        <Pane Name="Pane 1">
-          <Series>
-            <Simple SeriesType="StackedBar">
-              <Value UniqueName="DataItem3" />
-            </Simple>
-          </Series>
-        </Pane>
-      </Panes>
-    </Chart>
-    <Chart ComponentName="chartDashboardItem3" Name="Top Chats" DataSource="dataSource3">
-      <InteractivityOptions MasterFilterMode="Multiple" />
-      <DataItems>
-        <Dimension DataMember="topic" SortByMeasure="DataItem1" TopNEnabled="true" TopNMeasure="DataItem1" UniqueName="DataItem0" />
-        <Dimension DataMember="from_dispname" TopNEnabled="true" TopNShowOthers="true" TopNCount="8" TopNMeasure="DataItem1" UniqueName="DataItem2" />
         <Measure DataMember="id" SummaryType="Count" UniqueName="DataItem1" />
+        <Dimension DataMember="Author" TopNEnabled="true" TopNShowOthers="true" TopNCount="8" TopNMeasure="DataItem1" UniqueName="DataItem2" />
+        <Dimension DataMember="ChatName" TopNEnabled="true" TopNMeasure="DataItem1" UniqueName="DataItem0" />
       </DataItems>
       <SeriesDimensions>
         <SeriesDimension UniqueName="DataItem2" />
@@ -127,6 +46,7 @@
       </Arguments>
       <Panes>
         <Pane Name="Pane 1">
+          <AxisY TitleVisible="false" />
           <Series>
             <Simple SeriesType="StackedBar">
               <Value UniqueName="DataItem1" />
@@ -136,42 +56,114 @@
         <Pane Name="Pane 2" />
       </Panes>
     </Chart>
-    <ListBox ComponentName="listBoxDashboardItem1" Name="List Box 1" ShowCaption="false" DataSource="dataSource3">
+    <Chart ComponentName="chartDashboardItem4" Name="Messages by Hours" DataSource="dashboardEFDataSource1" DataMember="MessageList">
+      <InteractivityOptions MasterFilterMode="Multiple" />
       <DataItems>
-        <Dimension DataMember="from_dispname" TopNEnabled="true" TopNCount="20" TopNMeasure="DataItem1" UniqueName="DataItem0" />
-        <Measure DataMember="id" SummaryType="Count" UniqueName="DataItem1" />
+        <Measure DataMember="id" SummaryType="Count" UniqueName="DataItem4" />
+        <Dimension DataMember="DateTime" DateTimeGroupInterval="Hour" UniqueName="DataItem0" />
       </DataItems>
-      <HiddenMeasures>
-        <Measure UniqueName="DataItem1" />
-      </HiddenMeasures>
-      <FilterDimensions>
-        <Dimension UniqueName="DataItem0" />
-      </FilterDimensions>
-    </ListBox>
-    <ListBox ComponentName="listBoxDashboardItem2" Name="List Box 2" ShowCaption="false" DataSource="dataSource3">
+      <Arguments>
+        <Argument UniqueName="DataItem0" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <AxisY TitleVisible="false" />
+          <Series>
+            <Simple Name="id (Count)">
+              <Value UniqueName="DataItem4" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+    </Chart>
+    <Grid ComponentName="gridDashboardItem1" Name="Message log" DataSource="dashboardEFDataSource1" DataMember="MessageList">
       <DataItems>
-        <Dimension DataMember="topic" UniqueName="DataItem0" />
+        <Dimension DataMember="Author" UniqueName="DataItem4" />
+        <Dimension DataMember="DateTime" DateTimeGroupInterval="DateHourMinute" UniqueName="DataItem0" />
+        <Dimension DataMember="Body" UniqueName="DataItem2" />
+        <Dimension DataMember="ChatName" UniqueName="DataItem3" />
       </DataItems>
-      <FilterDimensions>
-        <Dimension UniqueName="DataItem0" />
-      </FilterDimensions>
-    </ListBox>
+      <GridColumns>
+        <GridDimensionColumn Name="Date" Weight="38.277511961722489">
+          <Dimension UniqueName="DataItem0" />
+        </GridDimensionColumn>
+        <GridDimensionColumn Name="Author" Weight="52.153110047846887">
+          <Dimension UniqueName="DataItem4" />
+        </GridDimensionColumn>
+        <GridDimensionColumn Name="Xml text" Weight="176.07655502392345">
+          <Dimension UniqueName="DataItem2" />
+        </GridDimensionColumn>
+        <GridDimensionColumn Weight="33.492822966507177">
+          <Dimension UniqueName="DataItem3" />
+        </GridDimensionColumn>
+      </GridColumns>
+      <GridOptions ColumnWidthMode="Manual" />
+    </Grid>
+    <Chart ComponentName="chartDashboardItem5" Name="Messages by Months" DataSource="dashboardEFDataSource1" DataMember="MessageList">
+      <InteractivityOptions MasterFilterMode="Multiple" IsDrillDownEnabled="true" />
+      <DataItems>
+        <Measure DataMember="TextLength" Name="Text Length" UniqueName="DataItem2" />
+        <Dimension DataMember="DateTime" DateTimeGroupInterval="MonthYear" UniqueName="DataItem0" />
+        <Dimension DataMember="DateTime" DateTimeGroupInterval="Day" UniqueName="DataItem1" />
+        <Measure DataMember="id" SummaryType="Count" UniqueName="DataItem4" />
+      </DataItems>
+      <Arguments>
+        <Argument UniqueName="DataItem0" />
+        <Argument UniqueName="DataItem1" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <AxisY TitleVisible="false" />
+          <Series>
+            <Simple>
+              <Value UniqueName="DataItem4" />
+            </Simple>
+            <Simple Name="Text Length" PlotOnSecondaryAxis="true">
+              <Value UniqueName="DataItem2" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+    </Chart>
   </Items>
+  <ColorSheme>
+    <Entry DataSource="dashboardEFDataSource1" DataMember="MessageList" PaletteIndex="1">
+      <DimensionKeys>
+        <DimensionKey>
+          <Definition DataMember="Author" />
+          <Value Type="System.String" Value="Ilya Scherbakov" />
+        </DimensionKey>
+      </DimensionKeys>
+    </Entry>
+    <Entry DataSource="dashboardEFDataSource1" DataMember="MessageList" PaletteIndex="7">
+      <DimensionKeys>
+        <DimensionKey>
+          <Definition DataMember="Author" />
+          <Value Type="System.String" Value="Румянцев Михаил" />
+        </DimensionKey>
+      </DimensionKeys>
+    </Entry>
+    <Entry DataSource="dashboardEFDataSource1" DataMember="MessageList" PaletteIndex="17">
+      <DimensionKeys>
+        <DimensionKey>
+          <Definition DataMember="Author" />
+          <Value Type="System.String" Value="Владимир Сладков" />
+        </DimensionKey>
+      </DimensionKeys>
+    </Entry>
+  </ColorSheme>
   <LayoutTree>
     <LayoutGroup>
-      <LayoutGroup Weight="12.82740094022834" Orientation="Vertical">
-        <LayoutItem DashboardItem="listBoxDashboardItem1" Weight="50" />
-        <LayoutItem DashboardItem="listBoxDashboardItem2" Weight="50" />
-      </LayoutGroup>
-      <LayoutGroup Weight="87.172599059771656">
-        <LayoutItem DashboardItem="chartDashboardItem2" Weight="35.670261941448381" />
-        <LayoutGroup Weight="64.329738058551612" Orientation="Vertical">
-          <LayoutGroup Weight="56.219512195121951">
-            <LayoutItem DashboardItem="chartDashboardItem3" Weight="49.940119760479043" />
-            <LayoutItem DashboardItem="chartDashboardItem1" Weight="50.059880239520957" />
+      <LayoutItem DashboardItem="chartDashboardItem2" Weight="27.561196736174072" />
+      <LayoutGroup Orientation="Vertical" Weight="72.438803263825932">
+        <LayoutGroup Weight="61.070911722141823">
+          <LayoutItem DashboardItem="chartDashboardItem3" Weight="61.201501877346686" />
+          <LayoutGroup Orientation="Vertical" Weight="38.798498122653314">
+            <LayoutItem DashboardItem="chartDashboardItem4" Weight="43.838862559241704" />
+            <LayoutItem DashboardItem="chartDashboardItem5" Weight="56.161137440758296" />
           </LayoutGroup>
-          <LayoutItem DashboardItem="gridDashboardItem2" Weight="43.780487804878049" />
         </LayoutGroup>
+        <LayoutItem DashboardItem="gridDashboardItem1" Weight="38.929088277858177" />
       </LayoutGroup>
     </LayoutGroup>
   </LayoutTree>
