@@ -46,8 +46,7 @@ namespace SkypeDashboard {
             this.dashboardViewer1.Size = new System.Drawing.Size(739, 372);
             this.dashboardViewer1.TabIndex = 0;
             this.dashboardViewer1.ConfigureDataConnection += new DevExpress.DashboardCommon.DashboardConfigureDataConnectionEventHandler(this.dashboardViewer1_ConfigureDataConnection);
-            this.dashboardViewer1.CustomParameters += new DevExpress.DashboardCommon.CustomParametersEventHandler(this.dashboardViewer1_CustomParameters);
-            this.dashboardViewer1.DashboardItemClick += new DevExpress.DashboardWin.DashboardItemMouseActionEventHandler(this.dashboardViewer1_DashboardItemClick);
+            this.dashboardViewer1.CustomParameters += new DevExpress.DashboardCommon.CustomParametersEventHandler(this.dashboardViewer1_CustomParameters);            
             // 
             // barManager1
             // 
