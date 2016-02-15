@@ -4,6 +4,19 @@
   <DataSources>
     <EFDataSource Name="EF Data Source 1" ConnectionStringName="mainEntities" ConnectionString="" Source="SkypeDashboard.mainEntities, SkypeDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" ComponentName="dashboardEFDataSource1" />
   </DataSources>
+  <Parameters>
+    <Parameter Name="Chat" Type="System.Int64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" AllowMultiselect="true">
+      <Values>
+        <Value>319699</Value>
+        <Value>100571</Value>
+        <Value>750</Value>
+        <Value>465577</Value>
+        <Value>472</Value>
+        <Value>464926</Value>
+      </Values>
+      <DynamicListLookUpSettings DataSourceName="dashboardEFDataSource1" DataMember="ChatsOnly" ValueMember="id" DisplayMember="displayname" />
+    </Parameter>
+  </Parameters>
   <Items>
     <Chart ComponentName="chartDashboardItem2" Name="Top Posters" DataSource="dashboardEFDataSource1" DataMember="MessageList" Rotated="true">
       <ColoringOptions MeasuresColoringMode="Hue" UseGlobalColors="false" />
@@ -106,7 +119,11 @@
         <Dimension DataMember="DateTime" DateTimeGroupInterval="MonthYear" UniqueName="DataItem0" />
         <Dimension DataMember="DateTime" DateTimeGroupInterval="Day" UniqueName="DataItem1" />
         <Measure DataMember="id" SummaryType="Count" UniqueName="DataItem4" />
+        <Dimension DataMember="ChatName" UniqueName="DataItem3" />
       </DataItems>
+      <HiddenDimensions>
+        <Dimension UniqueName="DataItem3" />
+      </HiddenDimensions>
       <Arguments>
         <Argument UniqueName="DataItem0" />
         <Argument UniqueName="DataItem1" />
@@ -126,7 +143,7 @@
       </Panes>
     </Chart>
   </Items>
-  <ColorSheme>
+  <ColorScheme>
     <Entry DataSource="dashboardEFDataSource1" DataMember="MessageList" PaletteIndex="1">
       <DimensionKeys>
         <DimensionKey>
@@ -151,19 +168,19 @@
         </DimensionKey>
       </DimensionKeys>
     </Entry>
-  </ColorSheme>
+  </ColorScheme>
   <LayoutTree>
     <LayoutGroup>
-      <LayoutItem DashboardItem="chartDashboardItem2" Weight="27.561196736174072" />
-      <LayoutGroup Orientation="Vertical" Weight="72.438803263825932">
-        <LayoutGroup Weight="61.070911722141823">
-          <LayoutItem DashboardItem="chartDashboardItem3" Weight="61.201501877346686" />
-          <LayoutGroup Orientation="Vertical" Weight="38.798498122653314">
-            <LayoutItem DashboardItem="chartDashboardItem4" Weight="43.838862559241704" />
-            <LayoutItem DashboardItem="chartDashboardItem5" Weight="56.161137440758296" />
+      <LayoutItem DashboardItem="chartDashboardItem2" Weight="28.005372733378106" />
+      <LayoutGroup Orientation="Vertical" Weight="71.99462726662189">
+        <LayoutGroup Weight="61.002444987775064">
+          <LayoutItem DashboardItem="chartDashboardItem3" Weight="61.007462686567166" />
+          <LayoutGroup Orientation="Vertical" Weight="38.992537313432834">
+            <LayoutItem DashboardItem="chartDashboardItem4" Weight="43.8877755511022" />
+            <LayoutItem DashboardItem="chartDashboardItem5" Weight="56.1122244488978" />
           </LayoutGroup>
         </LayoutGroup>
-        <LayoutItem DashboardItem="gridDashboardItem1" Weight="38.929088277858177" />
+        <LayoutItem DashboardItem="gridDashboardItem1" Weight="38.997555012224936" />
       </LayoutGroup>
     </LayoutGroup>
   </LayoutTree>
