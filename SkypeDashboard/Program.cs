@@ -5,6 +5,9 @@ using System.Windows.Forms;
 using DevExpress.UserSkins;
 using DevExpress.Skins;
 using DevExpress.LookAndFeel;
+using System.Data.Entity;
+using System.Text;
+using DevExpress.DashboardCommon.Server;
 
 namespace SkypeDashboard {
     static class Program {
@@ -12,14 +15,15 @@ namespace SkypeDashboard {
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main() {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+        static void Main() {        
 
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);        
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
+            //DashboardSession.ForceUseNewEngineOnly = true;
             UserLookAndFeel.Default.SetSkinStyle("DevExpress Style");
-            Application.Run(new DesignerForm());
+            Application.Run(new ViewerForm());
         }
     }
 }

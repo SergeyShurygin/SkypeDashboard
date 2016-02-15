@@ -1,4 +1,5 @@
-﻿namespace SkypeDashboard {
+﻿using DevExpress.DashboardCommon;
+namespace SkypeDashboard {
     partial class DesignerForm {
         /// <summary>
         /// Required designer variable.
@@ -77,6 +78,10 @@
             DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup15 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
             DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup16 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
             DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup17 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup18 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup19 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup20 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup21 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
             this.dashboardDesigner1 = new DevExpress.DashboardWin.DashboardDesigner();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.dashboardBackstageViewControl1 = new DevExpress.DashboardWin.Bars.DashboardBackstageViewControl();
@@ -95,12 +100,9 @@
             this.undoBarItem1 = new DevExpress.DashboardWin.Bars.UndoBarItem();
             this.redoBarItem1 = new DevExpress.DashboardWin.Bars.RedoBarItem();
             this.newDataSourceBarItem1 = new DevExpress.DashboardWin.Bars.NewDataSourceBarItem();
-            this.editDataSourceBarItem1 = new DevExpress.DashboardWin.Bars.EditDataSourceBarItem();
             this.renameDataSourceBarItem1 = new DevExpress.DashboardWin.Bars.RenameDataSourceBarItem();
             this.deleteDataSourceBarItem1 = new DevExpress.DashboardWin.Bars.DeleteDataSourceBarItem();
             this.serverModeBarItem1 = new DevExpress.DashboardWin.Bars.ServerModeBarItem();
-            this.addCalculatedFieldBarItem1 = new DevExpress.DashboardWin.Bars.AddCalculatedFieldBarItem();
-            this.dashboardParametersBarItem1 = new DevExpress.DashboardWin.Bars.DashboardParametersBarItem();
             this.editDataSourceFilterBarItem1 = new DevExpress.DashboardWin.Bars.EditDataSourceFilterBarItem();
             this.clearDataSourceFilterBarItem1 = new DevExpress.DashboardWin.Bars.ClearDataSourceFilterBarItem();
             this.insertPivotBarItem1 = new DevExpress.DashboardWin.Bars.InsertPivotBarItem();
@@ -124,7 +126,6 @@
             this.insertGroupBarItem1 = new DevExpress.DashboardWin.Bars.InsertGroupBarItem();
             this.duplicateItemBarItem1 = new DevExpress.DashboardWin.Bars.DuplicateItemBarItem();
             this.deleteItemBarItem1 = new DevExpress.DashboardWin.Bars.DeleteItemBarItem();
-            this.convertDashboardItemTypeBarItem1 = new DevExpress.DashboardWin.Bars.ConvertDashboardItemTypeBarItem();
             this.convertToPivotBarItem1 = new DevExpress.DashboardWin.Bars.ConvertToPivotBarItem();
             this.convertToGridBarItem1 = new DevExpress.DashboardWin.Bars.ConvertToGridBarItem();
             this.convertToChartBarItem1 = new DevExpress.DashboardWin.Bars.ConvertToChartBarItem();
@@ -132,10 +133,10 @@
             this.convertToGaugeBarItem1 = new DevExpress.DashboardWin.Bars.ConvertToGaugeBarItem();
             this.convertToCardBarItem1 = new DevExpress.DashboardWin.Bars.ConvertToCardBarItem();
             this.convertToChoroplethMapBarItem1 = new DevExpress.DashboardWin.Bars.ConvertToChoroplethMapBarItem();
-            this.convertGeoPointMapBaseBarItem1 = new DevExpress.DashboardWin.Bars.ConvertGeoPointMapBaseBarItem();
             this.convertToGeoPointMapBarItem1 = new DevExpress.DashboardWin.Bars.ConvertToGeoPointMapBarItem();
             this.convertToBubbleMapBarItem1 = new DevExpress.DashboardWin.Bars.ConvertToBubbleMapBarItem();
             this.convertToPieMapBarItem1 = new DevExpress.DashboardWin.Bars.ConvertToPieMapBarItem();
+            this.convertGeoPointMapBaseBarItem1 = new DevExpress.DashboardWin.Bars.ConvertGeoPointMapBaseBarItem();
             this.convertToRangeFilterBarItem1 = new DevExpress.DashboardWin.Bars.ConvertToRangeFilterBarItem();
             this.convertToComboBoxBarItem1 = new DevExpress.DashboardWin.Bars.ConvertToComboBoxBarItem();
             this.convertToListBoxBarItem1 = new DevExpress.DashboardWin.Bars.ConvertToListBoxBarItem();
@@ -270,6 +271,12 @@
             this.editActualColorsBarItem1 = new DevExpress.DashboardWin.Bars.EditActualColorsBarItem();
             this.quickAccessUndoBarItem1 = new DevExpress.DashboardWin.Bars.QuickAccessUndoBarItem();
             this.quickAccessRedoBarItem1 = new DevExpress.DashboardWin.Bars.QuickAccessRedoBarItem();
+            this.editSqlConnectionBarItem1 = new DevExpress.DashboardWin.Bars.EditSqlConnectionBarItem();
+            this.editOlapConnectionBarItem1 = new DevExpress.DashboardWin.Bars.EditOlapConnectionBarItem();
+            this.editObjectDataSourceBarItem1 = new DevExpress.DashboardWin.Bars.EditObjectDataSourceBarItem();
+            this.editEFDataSourceBarItem1 = new DevExpress.DashboardWin.Bars.EditEFDataSourceBarItem();
+            this.editRulesBarItem1 = new DevExpress.DashboardWin.Bars.EditRulesBarItem();
+            this.filterElementShowAllValueBarItem1 = new DevExpress.DashboardWin.Bars.FilterElementShowAllValueBarItem();
             this.pivotToolsRibbonPageCategory1 = new DevExpress.DashboardWin.Bars.PivotToolsRibbonPageCategory();
             this.dataRibbonPage1 = new DevExpress.DashboardWin.Bars.DataRibbonPage();
             this.filteringRibbonPageGroup1 = new DevExpress.DashboardWin.Bars.FilteringRibbonPageGroup();
@@ -393,6 +400,7 @@
             this.commonItemDesignRibbonPageGroup15 = new DevExpress.DashboardWin.Bars.CommonItemDesignRibbonPageGroup();
             this.filterElementTypeRibbonPageGroup1 = new DevExpress.DashboardWin.Bars.FilterElementTypeRibbonPageGroup();
             this.treeViewLayoutRibbonPageGroup1 = new DevExpress.DashboardWin.Bars.TreeViewLayoutRibbonPageGroup();
+            this.filterElementItemOptionsRibbonPageGroup1 = new DevExpress.DashboardWin.Bars.FilterElementItemOptionsRibbonPageGroup();
             this.groupToolsRibbonPageCategory1 = new DevExpress.DashboardWin.Bars.GroupToolsRibbonPageCategory();
             this.dataRibbonPage13 = new DevExpress.DashboardWin.Bars.DataRibbonPage();
             this.masterFilterRibbonPageGroup10 = new DevExpress.DashboardWin.Bars.MasterFilterRibbonPageGroup();
@@ -418,12 +426,77 @@
             this.quickAccessHistoryRibbonPageGroup1 = new DevExpress.DashboardWin.Bars.QuickAccessHistoryRibbonPageGroup();
             this.dataSourceRibbonPage1 = new DevExpress.DashboardWin.Bars.DataSourceRibbonPage();
             this.dataSourceRibbonPageGroup1 = new DevExpress.DashboardWin.Bars.DataSourceRibbonPageGroup();
-            this.dataSourceElementsRibbonPageGroup1 = new DevExpress.DashboardWin.Bars.DataSourceElementsRibbonPageGroup();
             this.dataSourceFilteringRibbonPageGroup1 = new DevExpress.DashboardWin.Bars.DataSourceFilteringRibbonPageGroup();
             this.viewRibbonPage1 = new DevExpress.DashboardWin.Bars.ViewRibbonPage();
             this.skinsRibbonPageGroup1 = new DevExpress.DashboardWin.Bars.SkinsRibbonPageGroup();
             this.dashboardPopupMenu1 = new DevExpress.DashboardWin.DashboardPopupMenu(this.components);
             this.dashboardBarController1 = new DevExpress.DashboardWin.Bars.DashboardBarController();
+            this.convertToPivotBarItem2 = new DevExpress.DashboardWin.Bars.ConvertToPivotBarItem();
+            this.convertToGridBarItem2 = new DevExpress.DashboardWin.Bars.ConvertToGridBarItem();
+            this.convertToChartBarItem2 = new DevExpress.DashboardWin.Bars.ConvertToChartBarItem();
+            this.convertToPieBarItem2 = new DevExpress.DashboardWin.Bars.ConvertToPieBarItem();
+            this.convertToGaugeBarItem2 = new DevExpress.DashboardWin.Bars.ConvertToGaugeBarItem();
+            this.convertToCardBarItem2 = new DevExpress.DashboardWin.Bars.ConvertToCardBarItem();
+            this.convertToChoroplethMapBarItem2 = new DevExpress.DashboardWin.Bars.ConvertToChoroplethMapBarItem();
+            this.convertGeoPointMapBaseBarItem2 = new DevExpress.DashboardWin.Bars.ConvertGeoPointMapBaseBarItem();
+            this.convertToGeoPointMapBarItem2 = new DevExpress.DashboardWin.Bars.ConvertToGeoPointMapBarItem();
+            this.convertToBubbleMapBarItem2 = new DevExpress.DashboardWin.Bars.ConvertToBubbleMapBarItem();
+            this.convertToPieMapBarItem2 = new DevExpress.DashboardWin.Bars.ConvertToPieMapBarItem();
+            this.convertToRangeFilterBarItem2 = new DevExpress.DashboardWin.Bars.ConvertToRangeFilterBarItem();
+            this.convertToComboBoxBarItem2 = new DevExpress.DashboardWin.Bars.ConvertToComboBoxBarItem();
+            this.convertToListBoxBarItem2 = new DevExpress.DashboardWin.Bars.ConvertToListBoxBarItem();
+            this.convertToTreeViewBarItem2 = new DevExpress.DashboardWin.Bars.ConvertToTreeViewBarItem();
+            this.editExcelDataSourceBarItem1 = new DevExpress.DashboardWin.Bars.EditExcelDataSourceBarItem();
+            this.addCalculatedFieldBarItem1 = new DevExpress.DashboardWin.Bars.AddCalculatedFieldBarItem();
+            this.sqlDataSourceQueryRibbonPageGroup1 = new DevExpress.DashboardWin.Bars.SqlDataSourceQueryRibbonPageGroup();
+            this.addQueryBarItem1 = new DevExpress.DashboardWin.Bars.AddQueryBarItem();
+            this.editQueryBarItem1 = new DevExpress.DashboardWin.Bars.EditQueryBarItem();
+            this.renameQueryBarItem1 = new DevExpress.DashboardWin.Bars.RenameQueryBarItem();
+            this.editQueryFilterBarItem1 = new DevExpress.DashboardWin.Bars.EditQueryFilterBarItem();
+            this.deleteQueryBarItem1 = new DevExpress.DashboardWin.Bars.DeleteQueryBarItem();
+            this.insertScatterChartBarItem1 = new DevExpress.DashboardWin.Bars.InsertScatterChartBarItem();
+            this.convertDashboardItemTypeBarItem1 = new DevExpress.DashboardWin.Bars.ConvertDashboardItemTypeBarItem();
+            this.convertToPivotBarItem3 = new DevExpress.DashboardWin.Bars.ConvertToPivotBarItem();
+            this.convertToGridBarItem3 = new DevExpress.DashboardWin.Bars.ConvertToGridBarItem();
+            this.convertToChartBarItem3 = new DevExpress.DashboardWin.Bars.ConvertToChartBarItem();
+            this.convertToPieBarItem3 = new DevExpress.DashboardWin.Bars.ConvertToPieBarItem();
+            this.convertToGaugeBarItem3 = new DevExpress.DashboardWin.Bars.ConvertToGaugeBarItem();
+            this.convertToCardBarItem3 = new DevExpress.DashboardWin.Bars.ConvertToCardBarItem();
+            this.convertToChoroplethMapBarItem3 = new DevExpress.DashboardWin.Bars.ConvertToChoroplethMapBarItem();
+            this.convertGeoPointMapBaseBarItem3 = new DevExpress.DashboardWin.Bars.ConvertGeoPointMapBaseBarItem();
+            this.convertToGeoPointMapBarItem3 = new DevExpress.DashboardWin.Bars.ConvertToGeoPointMapBarItem();
+            this.convertToBubbleMapBarItem3 = new DevExpress.DashboardWin.Bars.ConvertToBubbleMapBarItem();
+            this.convertToPieMapBarItem3 = new DevExpress.DashboardWin.Bars.ConvertToPieMapBarItem();
+            this.convertToRangeFilterBarItem3 = new DevExpress.DashboardWin.Bars.ConvertToRangeFilterBarItem();
+            this.convertToComboBoxBarItem3 = new DevExpress.DashboardWin.Bars.ConvertToComboBoxBarItem();
+            this.convertToListBoxBarItem3 = new DevExpress.DashboardWin.Bars.ConvertToListBoxBarItem();
+            this.convertToTreeViewBarItem3 = new DevExpress.DashboardWin.Bars.ConvertToTreeViewBarItem();
+            this.dashboardParametersBarItem1 = new DevExpress.DashboardWin.Bars.DashboardParametersBarItem();
+            this.dashboardAutomaticUpdatesBarItem1 = new DevExpress.DashboardWin.Bars.DashboardAutomaticUpdatesBarItem();
+            this.updateDataBarItem1 = new DevExpress.DashboardWin.Bars.UpdateDataBarItem();
+            this.filteringRibbonPageGroup13 = new DevExpress.DashboardWin.Bars.FilteringRibbonPageGroup();
+            this.dataRibbonPage14 = new DevExpress.DashboardWin.Bars.DataRibbonPage();
+            this.scatterChartToolsRibbonPageCategory1 = new DevExpress.DashboardWin.Bars.ScatterChartToolsRibbonPageCategory();
+            this.masterFilterRibbonPageGroup11 = new DevExpress.DashboardWin.Bars.MasterFilterRibbonPageGroup();
+            this.interactivitySettingsRibbonPageGroup13 = new DevExpress.DashboardWin.Bars.InteractivitySettingsRibbonPageGroup();
+            this.commonItemDesignRibbonPageGroup16 = new DevExpress.DashboardWin.Bars.CommonItemDesignRibbonPageGroup();
+            this.dashboardItemDesignRibbonPage16 = new DevExpress.DashboardWin.Bars.DashboardItemDesignRibbonPage();
+            this.scatterChartLayoutPageGroup1 = new DevExpress.DashboardWin.Bars.ScatterChartLayoutPageGroup();
+            this.scatterChartRotateBarItem1 = new DevExpress.DashboardWin.Bars.ScatterChartRotateBarItem();
+            this.scatterChartXAxisSettingsBarItem1 = new DevExpress.DashboardWin.Bars.ScatterChartXAxisSettingsBarItem();
+            this.scatterChartYAxisSettingsBarItem1 = new DevExpress.DashboardWin.Bars.ScatterChartYAxisSettingsBarItem();
+            this.scatterChartLegendPositionPageGroup1 = new DevExpress.DashboardWin.Bars.ScatterChartLegendPositionPageGroup();
+            this.scatterChartShowLegendBarItem1 = new DevExpress.DashboardWin.Bars.ScatterChartShowLegendBarItem();
+            this.galleryScatterChartLegendPositionItem1 = new DevExpress.DashboardWin.Bars.GalleryScatterChartLegendPositionItem();
+            this.scatterChartPointLabelPageGroup1 = new DevExpress.DashboardWin.Bars.ScatterChartPointLabelPageGroup();
+            this.scatterChartPointLabelOptionsBarItem1 = new DevExpress.DashboardWin.Bars.ScatterChartPointLabelOptionsBarItem();
+            this.pivotShowTotalsBarItem1 = new DevExpress.DashboardWin.Bars.PivotShowTotalsBarItem();
+            this.pivotShowColumnTotalsBarItem1 = new DevExpress.DashboardWin.Bars.PivotShowColumnTotalsBarItem();
+            this.pivotShowRowTotalsBarItem1 = new DevExpress.DashboardWin.Bars.PivotShowRowTotalsBarItem();
+            this.pivotShowGrandTotalsBarItem1 = new DevExpress.DashboardWin.Bars.PivotShowGrandTotalsBarItem();
+            this.pivotShowColumnGrandTotalsBarItem1 = new DevExpress.DashboardWin.Bars.PivotShowColumnGrandTotalsBarItem();
+            this.pivotShowRowGrandTotalsBarItem1 = new DevExpress.DashboardWin.Bars.PivotShowRowGrandTotalsBarItem();
+            this.coloringOptionsRibbonPageGroup3 = new DevExpress.DashboardWin.Bars.ColoringOptionsRibbonPageGroup();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dashboardBackstageViewControl1)).BeginInit();
             this.dashboardBackstageViewControl1.SuspendLayout();
@@ -438,16 +511,16 @@
             // 
             this.dashboardDesigner1.CustomDBSchemaProvider = null;
             this.dashboardDesigner1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dashboardDesigner1.Location = new System.Drawing.Point(0, 142);
+            this.dashboardDesigner1.Location = new System.Drawing.Point(0, 141);
             this.dashboardDesigner1.MenuManager = this.ribbonControl1;
             this.dashboardDesigner1.Name = "dashboardDesigner1";
             this.dashboardDesigner1.PopupMenu = this.dashboardPopupMenu1;
             this.dashboardDesigner1.PrintingOptions.DocumentContentOptions.FilterState = DevExpress.DashboardWin.DashboardPrintingFilterState.SeparatePage;
             this.dashboardDesigner1.PrintingOptions.FontInfo.GdiCharSet = ((byte)(0));
             this.dashboardDesigner1.PrintingOptions.FontInfo.Name = null;
-            this.dashboardDesigner1.Size = new System.Drawing.Size(1181, 436);
+            this.dashboardDesigner1.Size = new System.Drawing.Size(1181, 437);
             this.dashboardDesigner1.TabIndex = 0;
-            this.dashboardDesigner1.ConfigureDataConnection += new DevExpress.DataAccess.ConfigureDataConnectionEventHandler(this.dashboardDesigner1_ConfigureDataConnection);
+            this.dashboardDesigner1.ConfigureDataConnection += new DevExpress.DashboardCommon.DashboardConfigureDataConnectionEventHandler(this.dashboardDesigner1_ConfigureDataConnection);
             // 
             // ribbonControl1
             // 
@@ -463,12 +536,9 @@
             this.undoBarItem1,
             this.redoBarItem1,
             this.newDataSourceBarItem1,
-            this.editDataSourceBarItem1,
             this.renameDataSourceBarItem1,
             this.deleteDataSourceBarItem1,
             this.serverModeBarItem1,
-            this.addCalculatedFieldBarItem1,
-            this.dashboardParametersBarItem1,
             this.editDataSourceFilterBarItem1,
             this.clearDataSourceFilterBarItem1,
             this.insertPivotBarItem1,
@@ -492,7 +562,6 @@
             this.insertGroupBarItem1,
             this.duplicateItemBarItem1,
             this.deleteItemBarItem1,
-            this.convertDashboardItemTypeBarItem1,
             this.convertToPivotBarItem1,
             this.convertToGridBarItem1,
             this.convertToChartBarItem1,
@@ -636,9 +705,39 @@
             this.useLocalColorsBarItem1,
             this.editActualColorsBarItem1,
             this.quickAccessUndoBarItem1,
-            this.quickAccessRedoBarItem1});
+            this.quickAccessRedoBarItem1,
+            this.editSqlConnectionBarItem1,
+            this.editOlapConnectionBarItem1,
+            this.editObjectDataSourceBarItem1,
+            this.editEFDataSourceBarItem1,
+            this.editRulesBarItem1,
+            this.filterElementShowAllValueBarItem1,
+            this.editExcelDataSourceBarItem1,
+            this.addCalculatedFieldBarItem1,
+            this.addQueryBarItem1,
+            this.editQueryBarItem1,
+            this.renameQueryBarItem1,
+            this.editQueryFilterBarItem1,
+            this.deleteQueryBarItem1,
+            this.insertScatterChartBarItem1,
+            this.convertDashboardItemTypeBarItem1,
+            this.dashboardParametersBarItem1,
+            this.dashboardAutomaticUpdatesBarItem1,
+            this.updateDataBarItem1,
+            this.scatterChartRotateBarItem1,
+            this.scatterChartXAxisSettingsBarItem1,
+            this.scatterChartYAxisSettingsBarItem1,
+            this.scatterChartShowLegendBarItem1,
+            this.galleryScatterChartLegendPositionItem1,
+            this.scatterChartPointLabelOptionsBarItem1,
+            this.pivotShowTotalsBarItem1,
+            this.pivotShowColumnTotalsBarItem1,
+            this.pivotShowRowTotalsBarItem1,
+            this.pivotShowGrandTotalsBarItem1,
+            this.pivotShowColumnGrandTotalsBarItem1,
+            this.pivotShowRowGrandTotalsBarItem1});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 182;
+            this.ribbonControl1.MaxItemId = 216;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.PageCategories.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageCategory[] {
             this.pivotToolsRibbonPageCategory1,
@@ -655,7 +754,8 @@
             this.filterElementToolsRibbonPageCategory1,
             this.groupToolsRibbonPageCategory1,
             this.imageToolsRibbonPageCategory1,
-            this.textBoxToolsRibbonPageCategory1});
+            this.textBoxToolsRibbonPageCategory1,
+            this.scatterChartToolsRibbonPageCategory1});
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.homeRibbonPage1,
             this.dataSourceRibbonPage1,
@@ -663,7 +763,7 @@
             this.ribbonControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemSpinEdit1});
             this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2010;
-            this.ribbonControl1.Size = new System.Drawing.Size(1181, 142);
+            this.ribbonControl1.Size = new System.Drawing.Size(1181, 141);
             this.ribbonControl1.Toolbar.ItemLinks.Add(this.fileSaveBarItem1);
             this.ribbonControl1.Toolbar.ItemLinks.Add(this.quickAccessUndoBarItem1);
             this.ribbonControl1.Toolbar.ItemLinks.Add(this.quickAccessRedoBarItem1);
@@ -698,7 +798,7 @@
             this.backstageViewClientControl1.Controls.Add(this.recentDashboardsControl1);
             this.backstageViewClientControl1.Location = new System.Drawing.Point(132, 0);
             this.backstageViewClientControl1.Name = "backstageViewClientControl1";
-            this.backstageViewClientControl1.Size = new System.Drawing.Size(108, 150);
+            this.backstageViewClientControl1.Size = new System.Drawing.Size(91, 150);
             this.backstageViewClientControl1.TabIndex = 0;
             // 
             // recentDashboardsControl1
@@ -708,7 +808,7 @@
             this.recentDashboardsControl1.Location = new System.Drawing.Point(0, 0);
             this.recentDashboardsControl1.Name = "recentDashboardsControl1";
             this.recentDashboardsControl1.ServiceProvider = this.dashboardDesigner1;
-            this.recentDashboardsControl1.Size = new System.Drawing.Size(108, 150);
+            this.recentDashboardsControl1.Size = new System.Drawing.Size(91, 150);
             this.recentDashboardsControl1.TabIndex = 0;
             // 
             // dashboardBackstageRecentTab1
@@ -777,11 +877,6 @@
             this.newDataSourceBarItem1.Id = 7;
             this.newDataSourceBarItem1.Name = "newDataSourceBarItem1";
             // 
-            // editDataSourceBarItem1
-            // 
-            this.editDataSourceBarItem1.Id = 8;
-            this.editDataSourceBarItem1.Name = "editDataSourceBarItem1";
-            // 
             // renameDataSourceBarItem1
             // 
             this.renameDataSourceBarItem1.Id = 9;
@@ -796,16 +891,6 @@
             // 
             this.serverModeBarItem1.Id = 11;
             this.serverModeBarItem1.Name = "serverModeBarItem1";
-            // 
-            // addCalculatedFieldBarItem1
-            // 
-            this.addCalculatedFieldBarItem1.Id = 12;
-            this.addCalculatedFieldBarItem1.Name = "addCalculatedFieldBarItem1";
-            // 
-            // dashboardParametersBarItem1
-            // 
-            this.dashboardParametersBarItem1.Id = 13;
-            this.dashboardParametersBarItem1.Name = "dashboardParametersBarItem1";
             // 
             // editDataSourceFilterBarItem1
             // 
@@ -932,24 +1017,6 @@
             this.deleteItemBarItem1.Id = 36;
             this.deleteItemBarItem1.Name = "deleteItemBarItem1";
             // 
-            // convertDashboardItemTypeBarItem1
-            // 
-            this.convertDashboardItemTypeBarItem1.Id = 37;
-            this.convertDashboardItemTypeBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.convertToPivotBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.convertToGridBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.convertToChartBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.convertToPieBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.convertToGaugeBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.convertToCardBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.convertToChoroplethMapBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.convertGeoPointMapBaseBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.convertToRangeFilterBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.convertToComboBoxBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.convertToListBoxBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.convertToTreeViewBarItem1)});
-            this.convertDashboardItemTypeBarItem1.Name = "convertDashboardItemTypeBarItem1";
-            // 
             // convertToPivotBarItem1
             // 
             this.convertToPivotBarItem1.Id = 38;
@@ -985,15 +1052,6 @@
             this.convertToChoroplethMapBarItem1.Id = 44;
             this.convertToChoroplethMapBarItem1.Name = "convertToChoroplethMapBarItem1";
             // 
-            // convertGeoPointMapBaseBarItem1
-            // 
-            this.convertGeoPointMapBaseBarItem1.Id = 48;
-            this.convertGeoPointMapBaseBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.convertToGeoPointMapBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.convertToBubbleMapBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.convertToPieMapBarItem1)});
-            this.convertGeoPointMapBaseBarItem1.Name = "convertGeoPointMapBaseBarItem1";
-            // 
             // convertToGeoPointMapBarItem1
             // 
             this.convertToGeoPointMapBarItem1.Id = 45;
@@ -1008,6 +1066,15 @@
             // 
             this.convertToPieMapBarItem1.Id = 47;
             this.convertToPieMapBarItem1.Name = "convertToPieMapBarItem1";
+            // 
+            // convertGeoPointMapBaseBarItem1
+            // 
+            this.convertGeoPointMapBaseBarItem1.Id = 48;
+            this.convertGeoPointMapBaseBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToGeoPointMapBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToBubbleMapBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToPieMapBarItem1)});
+            this.convertGeoPointMapBaseBarItem1.Name = "convertGeoPointMapBaseBarItem1";
             // 
             // convertToRangeFilterBarItem1
             // 
@@ -1991,6 +2058,36 @@
             this.quickAccessRedoBarItem1.Id = 181;
             this.quickAccessRedoBarItem1.Name = "quickAccessRedoBarItem1";
             // 
+            // editSqlConnectionBarItem1
+            // 
+            this.editSqlConnectionBarItem1.Id = 182;
+            this.editSqlConnectionBarItem1.Name = "editSqlConnectionBarItem1";
+            // 
+            // editOlapConnectionBarItem1
+            // 
+            this.editOlapConnectionBarItem1.Id = 183;
+            this.editOlapConnectionBarItem1.Name = "editOlapConnectionBarItem1";
+            // 
+            // editObjectDataSourceBarItem1
+            // 
+            this.editObjectDataSourceBarItem1.Id = 184;
+            this.editObjectDataSourceBarItem1.Name = "editObjectDataSourceBarItem1";
+            // 
+            // editEFDataSourceBarItem1
+            // 
+            this.editEFDataSourceBarItem1.Id = 185;
+            this.editEFDataSourceBarItem1.Name = "editEFDataSourceBarItem1";
+            // 
+            // editRulesBarItem1
+            // 
+            this.editRulesBarItem1.Id = 189;
+            this.editRulesBarItem1.Name = "editRulesBarItem1";
+            // 
+            // filterElementShowAllValueBarItem1
+            // 
+            this.filterElementShowAllValueBarItem1.Id = 191;
+            this.filterElementShowAllValueBarItem1.Name = "filterElementShowAllValueBarItem1";
+            // 
             // pivotToolsRibbonPageCategory1
             // 
             this.pivotToolsRibbonPageCategory1.Control = this.dashboardDesigner1;
@@ -2023,6 +2120,8 @@
             // pivotLayoutRibbonPageGroup1
             // 
             this.pivotLayoutRibbonPageGroup1.ItemLinks.Add(this.pivotInitialStateBarItem1);
+            this.pivotLayoutRibbonPageGroup1.ItemLinks.Add(this.pivotShowTotalsBarItem1);
+            this.pivotLayoutRibbonPageGroup1.ItemLinks.Add(this.pivotShowGrandTotalsBarItem1);
             this.pivotLayoutRibbonPageGroup1.Name = "pivotLayoutRibbonPageGroup1";
             // 
             // dashboardItemDesignRibbonPage9
@@ -2849,7 +2948,8 @@
             this.dashboardItemDesignRibbonPage15.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.commonItemDesignRibbonPageGroup15,
             this.filterElementTypeRibbonPageGroup1,
-            this.treeViewLayoutRibbonPageGroup1});
+            this.treeViewLayoutRibbonPageGroup1,
+            this.filterElementItemOptionsRibbonPageGroup1});
             this.dashboardItemDesignRibbonPage15.Name = "dashboardItemDesignRibbonPage15";
             this.dashboardItemDesignRibbonPage15.Visible = false;
             // 
@@ -2866,11 +2966,19 @@
             this.filterElementTypeRibbonPageGroup1.ItemLinks.Add(this.listBoxCheckedTypeBarItem1);
             this.filterElementTypeRibbonPageGroup1.ItemLinks.Add(this.listBoxRadioTypeBarItem1);
             this.filterElementTypeRibbonPageGroup1.Name = "filterElementTypeRibbonPageGroup1";
+            this.filterElementTypeRibbonPageGroup1.Visible = false;
             // 
             // treeViewLayoutRibbonPageGroup1
             // 
             this.treeViewLayoutRibbonPageGroup1.ItemLinks.Add(this.treeViewAutoExpandBarItem1);
             this.treeViewLayoutRibbonPageGroup1.Name = "treeViewLayoutRibbonPageGroup1";
+            this.treeViewLayoutRibbonPageGroup1.Visible = false;
+            // 
+            // filterElementItemOptionsRibbonPageGroup1
+            // 
+            this.filterElementItemOptionsRibbonPageGroup1.ItemLinks.Add(this.filterElementShowAllValueBarItem1);
+            this.filterElementItemOptionsRibbonPageGroup1.Name = "filterElementItemOptionsRibbonPageGroup1";
+            this.filterElementItemOptionsRibbonPageGroup1.Visible = false;
             // 
             // groupToolsRibbonPageCategory1
             // 
@@ -3026,15 +3134,17 @@
             this.insertRibbonPageGroup1.ItemLinks.Add(this.insertImageBarItem1);
             this.insertRibbonPageGroup1.ItemLinks.Add(this.insertTextBoxBarItem1);
             this.insertRibbonPageGroup1.ItemLinks.Add(this.insertGroupBarItem1);
+            this.insertRibbonPageGroup1.ItemLinks.Add(this.insertScatterChartBarItem1);
             this.insertRibbonPageGroup1.Name = "insertRibbonPageGroup1";
             // 
             // itemOperationRibbonPageGroup1
             // 
             this.itemOperationRibbonPageGroup1.ItemLinks.Add(this.duplicateItemBarItem1);
             this.itemOperationRibbonPageGroup1.ItemLinks.Add(this.deleteItemBarItem1);
-            this.itemOperationRibbonPageGroup1.ItemLinks.Add(this.convertDashboardItemTypeBarItem1);
             this.itemOperationRibbonPageGroup1.ItemLinks.Add(this.removeDataItemsBarItem1);
             this.itemOperationRibbonPageGroup1.ItemLinks.Add(this.transposeItemBarItem1);
+            this.itemOperationRibbonPageGroup1.ItemLinks.Add(this.editRulesBarItem1);
+            this.itemOperationRibbonPageGroup1.ItemLinks.Add(this.convertDashboardItemTypeBarItem1);
             this.itemOperationRibbonPageGroup1.Name = "itemOperationRibbonPageGroup1";
             this.itemOperationRibbonPageGroup1.Visible = false;
             // 
@@ -3049,6 +3159,9 @@
             this.dashboardDesignRibbonPageGroup1.ItemLinks.Add(this.dashboardTitleBarItem1);
             this.dashboardDesignRibbonPageGroup1.ItemLinks.Add(this.setCurrencyCultureBarItem1);
             this.dashboardDesignRibbonPageGroup1.ItemLinks.Add(this.dashboardColorSchemeBarItem1);
+            this.dashboardDesignRibbonPageGroup1.ItemLinks.Add(this.dashboardParametersBarItem1);
+            this.dashboardDesignRibbonPageGroup1.ItemLinks.Add(this.dashboardAutomaticUpdatesBarItem1);
+            this.dashboardDesignRibbonPageGroup1.ItemLinks.Add(this.updateDataBarItem1);
             this.dashboardDesignRibbonPageGroup1.Name = "dashboardDesignRibbonPageGroup1";
             // 
             // quickAccessHistoryRibbonPageGroup1
@@ -3062,30 +3175,30 @@
             // 
             this.dataSourceRibbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.dataSourceRibbonPageGroup1,
-            this.dataSourceElementsRibbonPageGroup1,
-            this.dataSourceFilteringRibbonPageGroup1});
+            this.dataSourceFilteringRibbonPageGroup1,
+            this.sqlDataSourceQueryRibbonPageGroup1});
             this.dataSourceRibbonPage1.Name = "dataSourceRibbonPage1";
             // 
             // dataSourceRibbonPageGroup1
             // 
             this.dataSourceRibbonPageGroup1.ItemLinks.Add(this.newDataSourceBarItem1);
-            this.dataSourceRibbonPageGroup1.ItemLinks.Add(this.editDataSourceBarItem1);
             this.dataSourceRibbonPageGroup1.ItemLinks.Add(this.renameDataSourceBarItem1);
             this.dataSourceRibbonPageGroup1.ItemLinks.Add(this.deleteDataSourceBarItem1);
             this.dataSourceRibbonPageGroup1.ItemLinks.Add(this.serverModeBarItem1);
+            this.dataSourceRibbonPageGroup1.ItemLinks.Add(this.editSqlConnectionBarItem1);
+            this.dataSourceRibbonPageGroup1.ItemLinks.Add(this.editOlapConnectionBarItem1);
+            this.dataSourceRibbonPageGroup1.ItemLinks.Add(this.editObjectDataSourceBarItem1);
+            this.dataSourceRibbonPageGroup1.ItemLinks.Add(this.editEFDataSourceBarItem1);
+            this.dataSourceRibbonPageGroup1.ItemLinks.Add(this.editExcelDataSourceBarItem1);
+            this.dataSourceRibbonPageGroup1.ItemLinks.Add(this.addCalculatedFieldBarItem1);
             this.dataSourceRibbonPageGroup1.Name = "dataSourceRibbonPageGroup1";
-            // 
-            // dataSourceElementsRibbonPageGroup1
-            // 
-            this.dataSourceElementsRibbonPageGroup1.ItemLinks.Add(this.addCalculatedFieldBarItem1);
-            this.dataSourceElementsRibbonPageGroup1.ItemLinks.Add(this.dashboardParametersBarItem1);
-            this.dataSourceElementsRibbonPageGroup1.Name = "dataSourceElementsRibbonPageGroup1";
             // 
             // dataSourceFilteringRibbonPageGroup1
             // 
             this.dataSourceFilteringRibbonPageGroup1.ItemLinks.Add(this.editDataSourceFilterBarItem1);
             this.dataSourceFilteringRibbonPageGroup1.ItemLinks.Add(this.clearDataSourceFilterBarItem1);
             this.dataSourceFilteringRibbonPageGroup1.Name = "dataSourceFilteringRibbonPageGroup1";
+            this.dataSourceFilteringRibbonPageGroup1.Visible = false;
             // 
             // viewRibbonPage1
             // 
@@ -3106,7 +3219,8 @@
             this.dashboardPopupMenu1.ItemLinks.Add(this.convertDashboardItemTypeBarItem1);
             this.dashboardPopupMenu1.ItemLinks.Add(this.removeDataItemsBarItem1);
             this.dashboardPopupMenu1.ItemLinks.Add(this.transposeItemBarItem1);
-            this.dashboardPopupMenu1.ItemLinks.Add(this.editItemNamesBarItem1);
+            this.dashboardPopupMenu1.ItemLinks.Add(this.editRulesBarItem1);
+            this.dashboardPopupMenu1.ItemLinks.Add(this.editItemNamesBarItem1, true);
             this.dashboardPopupMenu1.ItemLinks.Add(this.deleteGroupBarItem1, true);
             this.dashboardPopupMenu1.ItemLinks.Add(this.editFilterBarItem1, true);
             this.dashboardPopupMenu1.ItemLinks.Add(this.clearFilterBarItem1);
@@ -3129,12 +3243,9 @@
             this.dashboardBarController1.BarItems.Add(this.undoBarItem1);
             this.dashboardBarController1.BarItems.Add(this.redoBarItem1);
             this.dashboardBarController1.BarItems.Add(this.newDataSourceBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.editDataSourceBarItem1);
             this.dashboardBarController1.BarItems.Add(this.renameDataSourceBarItem1);
             this.dashboardBarController1.BarItems.Add(this.deleteDataSourceBarItem1);
             this.dashboardBarController1.BarItems.Add(this.serverModeBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.addCalculatedFieldBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.dashboardParametersBarItem1);
             this.dashboardBarController1.BarItems.Add(this.editDataSourceFilterBarItem1);
             this.dashboardBarController1.BarItems.Add(this.clearDataSourceFilterBarItem1);
             this.dashboardBarController1.BarItems.Add(this.insertPivotBarItem1);
@@ -3158,7 +3269,6 @@
             this.dashboardBarController1.BarItems.Add(this.insertGroupBarItem1);
             this.dashboardBarController1.BarItems.Add(this.duplicateItemBarItem1);
             this.dashboardBarController1.BarItems.Add(this.deleteItemBarItem1);
-            this.dashboardBarController1.BarItems.Add(this.convertDashboardItemTypeBarItem1);
             this.dashboardBarController1.BarItems.Add(this.convertToPivotBarItem1);
             this.dashboardBarController1.BarItems.Add(this.convertToGridBarItem1);
             this.dashboardBarController1.BarItems.Add(this.convertToChartBarItem1);
@@ -3303,7 +3413,470 @@
             this.dashboardBarController1.BarItems.Add(this.editActualColorsBarItem1);
             this.dashboardBarController1.BarItems.Add(this.quickAccessUndoBarItem1);
             this.dashboardBarController1.BarItems.Add(this.quickAccessRedoBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.editSqlConnectionBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.editOlapConnectionBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.editObjectDataSourceBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.editEFDataSourceBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.convertToPivotBarItem2);
+            this.dashboardBarController1.BarItems.Add(this.convertToGridBarItem2);
+            this.dashboardBarController1.BarItems.Add(this.convertToChartBarItem2);
+            this.dashboardBarController1.BarItems.Add(this.convertToPieBarItem2);
+            this.dashboardBarController1.BarItems.Add(this.convertToGaugeBarItem2);
+            this.dashboardBarController1.BarItems.Add(this.convertToCardBarItem2);
+            this.dashboardBarController1.BarItems.Add(this.convertToChoroplethMapBarItem2);
+            this.dashboardBarController1.BarItems.Add(this.convertGeoPointMapBaseBarItem2);
+            this.dashboardBarController1.BarItems.Add(this.convertToGeoPointMapBarItem2);
+            this.dashboardBarController1.BarItems.Add(this.convertToBubbleMapBarItem2);
+            this.dashboardBarController1.BarItems.Add(this.convertToPieMapBarItem2);
+            this.dashboardBarController1.BarItems.Add(this.convertToRangeFilterBarItem2);
+            this.dashboardBarController1.BarItems.Add(this.convertToComboBoxBarItem2);
+            this.dashboardBarController1.BarItems.Add(this.convertToListBoxBarItem2);
+            this.dashboardBarController1.BarItems.Add(this.convertToTreeViewBarItem2);
+            this.dashboardBarController1.BarItems.Add(this.editRulesBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.filterElementShowAllValueBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.editExcelDataSourceBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.addCalculatedFieldBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.addQueryBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.editQueryBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.renameQueryBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.editQueryFilterBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.deleteQueryBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.insertScatterChartBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.convertDashboardItemTypeBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.convertToPivotBarItem3);
+            this.dashboardBarController1.BarItems.Add(this.convertToGridBarItem3);
+            this.dashboardBarController1.BarItems.Add(this.convertToChartBarItem3);
+            this.dashboardBarController1.BarItems.Add(this.convertToPieBarItem3);
+            this.dashboardBarController1.BarItems.Add(this.convertToGaugeBarItem3);
+            this.dashboardBarController1.BarItems.Add(this.convertToCardBarItem3);
+            this.dashboardBarController1.BarItems.Add(this.convertToChoroplethMapBarItem3);
+            this.dashboardBarController1.BarItems.Add(this.convertGeoPointMapBaseBarItem3);
+            this.dashboardBarController1.BarItems.Add(this.convertToGeoPointMapBarItem3);
+            this.dashboardBarController1.BarItems.Add(this.convertToBubbleMapBarItem3);
+            this.dashboardBarController1.BarItems.Add(this.convertToPieMapBarItem3);
+            this.dashboardBarController1.BarItems.Add(this.convertToRangeFilterBarItem3);
+            this.dashboardBarController1.BarItems.Add(this.convertToComboBoxBarItem3);
+            this.dashboardBarController1.BarItems.Add(this.convertToListBoxBarItem3);
+            this.dashboardBarController1.BarItems.Add(this.convertToTreeViewBarItem3);
+            this.dashboardBarController1.BarItems.Add(this.dashboardParametersBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.dashboardAutomaticUpdatesBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.updateDataBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.scatterChartRotateBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.scatterChartXAxisSettingsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.scatterChartYAxisSettingsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.scatterChartShowLegendBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.galleryScatterChartLegendPositionItem1);
+            this.dashboardBarController1.BarItems.Add(this.scatterChartPointLabelOptionsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pivotShowTotalsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pivotShowColumnTotalsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pivotShowRowTotalsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pivotShowGrandTotalsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pivotShowColumnGrandTotalsBarItem1);
+            this.dashboardBarController1.BarItems.Add(this.pivotShowRowGrandTotalsBarItem1);
             this.dashboardBarController1.Control = this.dashboardDesigner1;
+            // 
+            // convertToPivotBarItem2
+            // 
+            this.convertToPivotBarItem2.Id = -1;
+            this.convertToPivotBarItem2.Name = "convertToPivotBarItem2";
+            // 
+            // convertToGridBarItem2
+            // 
+            this.convertToGridBarItem2.Id = -1;
+            this.convertToGridBarItem2.Name = "convertToGridBarItem2";
+            // 
+            // convertToChartBarItem2
+            // 
+            this.convertToChartBarItem2.Id = -1;
+            this.convertToChartBarItem2.Name = "convertToChartBarItem2";
+            // 
+            // convertToPieBarItem2
+            // 
+            this.convertToPieBarItem2.Id = -1;
+            this.convertToPieBarItem2.Name = "convertToPieBarItem2";
+            // 
+            // convertToGaugeBarItem2
+            // 
+            this.convertToGaugeBarItem2.Id = -1;
+            this.convertToGaugeBarItem2.Name = "convertToGaugeBarItem2";
+            // 
+            // convertToCardBarItem2
+            // 
+            this.convertToCardBarItem2.Id = -1;
+            this.convertToCardBarItem2.Name = "convertToCardBarItem2";
+            // 
+            // convertToChoroplethMapBarItem2
+            // 
+            this.convertToChoroplethMapBarItem2.Id = -1;
+            this.convertToChoroplethMapBarItem2.Name = "convertToChoroplethMapBarItem2";
+            // 
+            // convertGeoPointMapBaseBarItem2
+            // 
+            this.convertGeoPointMapBaseBarItem2.Id = -1;
+            this.convertGeoPointMapBaseBarItem2.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToGeoPointMapBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToBubbleMapBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToPieMapBarItem1)});
+            this.convertGeoPointMapBaseBarItem2.Name = "convertGeoPointMapBaseBarItem2";
+            // 
+            // convertToGeoPointMapBarItem2
+            // 
+            this.convertToGeoPointMapBarItem2.Id = -1;
+            this.convertToGeoPointMapBarItem2.Name = "convertToGeoPointMapBarItem2";
+            // 
+            // convertToBubbleMapBarItem2
+            // 
+            this.convertToBubbleMapBarItem2.Id = -1;
+            this.convertToBubbleMapBarItem2.Name = "convertToBubbleMapBarItem2";
+            // 
+            // convertToPieMapBarItem2
+            // 
+            this.convertToPieMapBarItem2.Id = -1;
+            this.convertToPieMapBarItem2.Name = "convertToPieMapBarItem2";
+            // 
+            // convertToRangeFilterBarItem2
+            // 
+            this.convertToRangeFilterBarItem2.Id = -1;
+            this.convertToRangeFilterBarItem2.Name = "convertToRangeFilterBarItem2";
+            // 
+            // convertToComboBoxBarItem2
+            // 
+            this.convertToComboBoxBarItem2.Id = -1;
+            this.convertToComboBoxBarItem2.Name = "convertToComboBoxBarItem2";
+            // 
+            // convertToListBoxBarItem2
+            // 
+            this.convertToListBoxBarItem2.Id = -1;
+            this.convertToListBoxBarItem2.Name = "convertToListBoxBarItem2";
+            // 
+            // convertToTreeViewBarItem2
+            // 
+            this.convertToTreeViewBarItem2.Id = -1;
+            this.convertToTreeViewBarItem2.Name = "convertToTreeViewBarItem2";
+            // 
+            // editExcelDataSourceBarItem1
+            // 
+            this.editExcelDataSourceBarItem1.Id = 192;
+            this.editExcelDataSourceBarItem1.Name = "editExcelDataSourceBarItem1";
+            // 
+            // addCalculatedFieldBarItem1
+            // 
+            this.addCalculatedFieldBarItem1.Id = 193;
+            this.addCalculatedFieldBarItem1.Name = "addCalculatedFieldBarItem1";
+            // 
+            // sqlDataSourceQueryRibbonPageGroup1
+            // 
+            this.sqlDataSourceQueryRibbonPageGroup1.ItemLinks.Add(this.addQueryBarItem1);
+            this.sqlDataSourceQueryRibbonPageGroup1.ItemLinks.Add(this.editQueryBarItem1);
+            this.sqlDataSourceQueryRibbonPageGroup1.ItemLinks.Add(this.renameQueryBarItem1);
+            this.sqlDataSourceQueryRibbonPageGroup1.ItemLinks.Add(this.editQueryFilterBarItem1);
+            this.sqlDataSourceQueryRibbonPageGroup1.ItemLinks.Add(this.deleteQueryBarItem1);
+            this.sqlDataSourceQueryRibbonPageGroup1.Name = "sqlDataSourceQueryRibbonPageGroup1";
+            this.sqlDataSourceQueryRibbonPageGroup1.Visible = false;
+            // 
+            // addQueryBarItem1
+            // 
+            this.addQueryBarItem1.Id = 194;
+            this.addQueryBarItem1.Name = "addQueryBarItem1";
+            // 
+            // editQueryBarItem1
+            // 
+            this.editQueryBarItem1.Id = 195;
+            this.editQueryBarItem1.Name = "editQueryBarItem1";
+            // 
+            // renameQueryBarItem1
+            // 
+            this.renameQueryBarItem1.Id = 196;
+            this.renameQueryBarItem1.Name = "renameQueryBarItem1";
+            // 
+            // editQueryFilterBarItem1
+            // 
+            this.editQueryFilterBarItem1.Id = 197;
+            this.editQueryFilterBarItem1.Name = "editQueryFilterBarItem1";
+            // 
+            // deleteQueryBarItem1
+            // 
+            this.deleteQueryBarItem1.Id = 198;
+            this.deleteQueryBarItem1.Name = "deleteQueryBarItem1";
+            // 
+            // insertScatterChartBarItem1
+            // 
+            this.insertScatterChartBarItem1.Id = 199;
+            this.insertScatterChartBarItem1.Name = "insertScatterChartBarItem1";
+            // 
+            // convertDashboardItemTypeBarItem1
+            // 
+            this.convertDashboardItemTypeBarItem1.Id = 200;
+            this.convertDashboardItemTypeBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToPivotBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToGridBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToChartBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToPieBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToGaugeBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToCardBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToChoroplethMapBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertGeoPointMapBaseBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToRangeFilterBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToComboBoxBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToListBoxBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToTreeViewBarItem1)});
+            this.convertDashboardItemTypeBarItem1.Name = "convertDashboardItemTypeBarItem1";
+            // 
+            // convertToPivotBarItem3
+            // 
+            this.convertToPivotBarItem3.Id = -1;
+            this.convertToPivotBarItem3.Name = "convertToPivotBarItem3";
+            // 
+            // convertToGridBarItem3
+            // 
+            this.convertToGridBarItem3.Id = -1;
+            this.convertToGridBarItem3.Name = "convertToGridBarItem3";
+            // 
+            // convertToChartBarItem3
+            // 
+            this.convertToChartBarItem3.Id = -1;
+            this.convertToChartBarItem3.Name = "convertToChartBarItem3";
+            // 
+            // convertToPieBarItem3
+            // 
+            this.convertToPieBarItem3.Id = -1;
+            this.convertToPieBarItem3.Name = "convertToPieBarItem3";
+            // 
+            // convertToGaugeBarItem3
+            // 
+            this.convertToGaugeBarItem3.Id = -1;
+            this.convertToGaugeBarItem3.Name = "convertToGaugeBarItem3";
+            // 
+            // convertToCardBarItem3
+            // 
+            this.convertToCardBarItem3.Id = -1;
+            this.convertToCardBarItem3.Name = "convertToCardBarItem3";
+            // 
+            // convertToChoroplethMapBarItem3
+            // 
+            this.convertToChoroplethMapBarItem3.Id = -1;
+            this.convertToChoroplethMapBarItem3.Name = "convertToChoroplethMapBarItem3";
+            // 
+            // convertGeoPointMapBaseBarItem3
+            // 
+            this.convertGeoPointMapBaseBarItem3.Id = -1;
+            this.convertGeoPointMapBaseBarItem3.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToGeoPointMapBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToBubbleMapBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.convertToPieMapBarItem1)});
+            this.convertGeoPointMapBaseBarItem3.Name = "convertGeoPointMapBaseBarItem3";
+            // 
+            // convertToGeoPointMapBarItem3
+            // 
+            this.convertToGeoPointMapBarItem3.Id = -1;
+            this.convertToGeoPointMapBarItem3.Name = "convertToGeoPointMapBarItem3";
+            // 
+            // convertToBubbleMapBarItem3
+            // 
+            this.convertToBubbleMapBarItem3.Id = -1;
+            this.convertToBubbleMapBarItem3.Name = "convertToBubbleMapBarItem3";
+            // 
+            // convertToPieMapBarItem3
+            // 
+            this.convertToPieMapBarItem3.Id = -1;
+            this.convertToPieMapBarItem3.Name = "convertToPieMapBarItem3";
+            // 
+            // convertToRangeFilterBarItem3
+            // 
+            this.convertToRangeFilterBarItem3.Id = -1;
+            this.convertToRangeFilterBarItem3.Name = "convertToRangeFilterBarItem3";
+            // 
+            // convertToComboBoxBarItem3
+            // 
+            this.convertToComboBoxBarItem3.Id = -1;
+            this.convertToComboBoxBarItem3.Name = "convertToComboBoxBarItem3";
+            // 
+            // convertToListBoxBarItem3
+            // 
+            this.convertToListBoxBarItem3.Id = -1;
+            this.convertToListBoxBarItem3.Name = "convertToListBoxBarItem3";
+            // 
+            // convertToTreeViewBarItem3
+            // 
+            this.convertToTreeViewBarItem3.Id = -1;
+            this.convertToTreeViewBarItem3.Name = "convertToTreeViewBarItem3";
+            // 
+            // dashboardParametersBarItem1
+            // 
+            this.dashboardParametersBarItem1.Id = 201;
+            this.dashboardParametersBarItem1.Name = "dashboardParametersBarItem1";
+            // 
+            // dashboardAutomaticUpdatesBarItem1
+            // 
+            this.dashboardAutomaticUpdatesBarItem1.Id = 202;
+            this.dashboardAutomaticUpdatesBarItem1.Name = "dashboardAutomaticUpdatesBarItem1";
+            // 
+            // updateDataBarItem1
+            // 
+            this.updateDataBarItem1.Id = 203;
+            this.updateDataBarItem1.Name = "updateDataBarItem1";
+            // 
+            // filteringRibbonPageGroup13
+            // 
+            this.filteringRibbonPageGroup13.ItemLinks.Add(this.editFilterBarItem1);
+            this.filteringRibbonPageGroup13.ItemLinks.Add(this.clearFilterBarItem1);
+            this.filteringRibbonPageGroup13.Name = "filteringRibbonPageGroup13";
+            // 
+            // dataRibbonPage14
+            // 
+            this.dataRibbonPage14.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.filteringRibbonPageGroup13,
+            this.masterFilterRibbonPageGroup11,
+            this.interactivitySettingsRibbonPageGroup13});
+            this.dataRibbonPage14.Name = "dataRibbonPage14";
+            this.dataRibbonPage14.Visible = false;
+            // 
+            // scatterChartToolsRibbonPageCategory1
+            // 
+            this.scatterChartToolsRibbonPageCategory1.Control = this.dashboardDesigner1;
+            this.scatterChartToolsRibbonPageCategory1.Name = "scatterChartToolsRibbonPageCategory1";
+            this.scatterChartToolsRibbonPageCategory1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
+            this.dataRibbonPage14,
+            this.dashboardItemDesignRibbonPage16});
+            this.scatterChartToolsRibbonPageCategory1.Visible = false;
+            // 
+            // masterFilterRibbonPageGroup11
+            // 
+            this.masterFilterRibbonPageGroup11.ItemLinks.Add(this.masterFilterBarItem1);
+            this.masterFilterRibbonPageGroup11.ItemLinks.Add(this.multipleValuesMasterFilterBarItem1);
+            this.masterFilterRibbonPageGroup11.ItemLinks.Add(this.drillDownBarItem1);
+            this.masterFilterRibbonPageGroup11.Name = "masterFilterRibbonPageGroup11";
+            // 
+            // interactivitySettingsRibbonPageGroup13
+            // 
+            this.interactivitySettingsRibbonPageGroup13.ItemLinks.Add(this.crossDataSourceFilteringBarItem1);
+            this.interactivitySettingsRibbonPageGroup13.ItemLinks.Add(this.ignoreMasterFiltersBarItem1);
+            this.interactivitySettingsRibbonPageGroup13.Name = "interactivitySettingsRibbonPageGroup13";
+            // 
+            // commonItemDesignRibbonPageGroup16
+            // 
+            this.commonItemDesignRibbonPageGroup16.ItemLinks.Add(this.showItemCaptionBarItem1);
+            this.commonItemDesignRibbonPageGroup16.ItemLinks.Add(this.editItemNamesBarItem1);
+            this.commonItemDesignRibbonPageGroup16.Name = "commonItemDesignRibbonPageGroup16";
+            // 
+            // dashboardItemDesignRibbonPage16
+            // 
+            this.dashboardItemDesignRibbonPage16.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.commonItemDesignRibbonPageGroup16,
+            this.scatterChartLayoutPageGroup1,
+            this.scatterChartLegendPositionPageGroup1,
+            this.scatterChartPointLabelPageGroup1,
+            this.coloringOptionsRibbonPageGroup3});
+            this.dashboardItemDesignRibbonPage16.Name = "dashboardItemDesignRibbonPage16";
+            this.dashboardItemDesignRibbonPage16.Visible = false;
+            // 
+            // scatterChartLayoutPageGroup1
+            // 
+            this.scatterChartLayoutPageGroup1.ItemLinks.Add(this.scatterChartRotateBarItem1);
+            this.scatterChartLayoutPageGroup1.ItemLinks.Add(this.scatterChartXAxisSettingsBarItem1);
+            this.scatterChartLayoutPageGroup1.ItemLinks.Add(this.scatterChartYAxisSettingsBarItem1);
+            this.scatterChartLayoutPageGroup1.Name = "scatterChartLayoutPageGroup1";
+            // 
+            // scatterChartRotateBarItem1
+            // 
+            this.scatterChartRotateBarItem1.Id = 204;
+            this.scatterChartRotateBarItem1.Name = "scatterChartRotateBarItem1";
+            // 
+            // scatterChartXAxisSettingsBarItem1
+            // 
+            this.scatterChartXAxisSettingsBarItem1.Id = 205;
+            this.scatterChartXAxisSettingsBarItem1.Name = "scatterChartXAxisSettingsBarItem1";
+            // 
+            // scatterChartYAxisSettingsBarItem1
+            // 
+            this.scatterChartYAxisSettingsBarItem1.Id = 206;
+            this.scatterChartYAxisSettingsBarItem1.Name = "scatterChartYAxisSettingsBarItem1";
+            // 
+            // scatterChartLegendPositionPageGroup1
+            // 
+            this.scatterChartLegendPositionPageGroup1.ItemLinks.Add(this.scatterChartShowLegendBarItem1);
+            this.scatterChartLegendPositionPageGroup1.ItemLinks.Add(this.galleryScatterChartLegendPositionItem1);
+            this.scatterChartLegendPositionPageGroup1.Name = "scatterChartLegendPositionPageGroup1";
+            // 
+            // scatterChartShowLegendBarItem1
+            // 
+            this.scatterChartShowLegendBarItem1.Id = 207;
+            this.scatterChartShowLegendBarItem1.Name = "scatterChartShowLegendBarItem1";
+            // 
+            // galleryScatterChartLegendPositionItem1
+            // 
+            // 
+            // 
+            // 
+            this.galleryScatterChartLegendPositionItem1.Gallery.ColumnCount = 3;
+            galleryItemGroup18.Caption = "Inside Horizontal";
+            galleryItemGroup19.Caption = "Inside Vertical";
+            galleryItemGroup20.Caption = "Outside Horizontal";
+            galleryItemGroup21.Caption = "Outside Vertical";
+            this.galleryScatterChartLegendPositionItem1.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
+            galleryItemGroup18,
+            galleryItemGroup19,
+            galleryItemGroup20,
+            galleryItemGroup21});
+            this.galleryScatterChartLegendPositionItem1.Gallery.ImageSize = new System.Drawing.Size(32, 32);
+            this.galleryScatterChartLegendPositionItem1.Gallery.RowCount = 8;
+            this.galleryScatterChartLegendPositionItem1.Id = 208;
+            this.galleryScatterChartLegendPositionItem1.Name = "galleryScatterChartLegendPositionItem1";
+            // 
+            // scatterChartPointLabelPageGroup1
+            // 
+            this.scatterChartPointLabelPageGroup1.ItemLinks.Add(this.scatterChartPointLabelOptionsBarItem1);
+            this.scatterChartPointLabelPageGroup1.Name = "scatterChartPointLabelPageGroup1";
+            // 
+            // scatterChartPointLabelOptionsBarItem1
+            // 
+            this.scatterChartPointLabelOptionsBarItem1.Id = 209;
+            this.scatterChartPointLabelOptionsBarItem1.Name = "scatterChartPointLabelOptionsBarItem1";
+            // 
+            // pivotShowTotalsBarItem1
+            // 
+            this.pivotShowTotalsBarItem1.Id = 210;
+            this.pivotShowTotalsBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.pivotShowColumnTotalsBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.pivotShowRowTotalsBarItem1)});
+            this.pivotShowTotalsBarItem1.Name = "pivotShowTotalsBarItem1";
+            this.pivotShowTotalsBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
+            // 
+            // pivotShowColumnTotalsBarItem1
+            // 
+            this.pivotShowColumnTotalsBarItem1.Id = 211;
+            this.pivotShowColumnTotalsBarItem1.Name = "pivotShowColumnTotalsBarItem1";
+            // 
+            // pivotShowRowTotalsBarItem1
+            // 
+            this.pivotShowRowTotalsBarItem1.Id = 212;
+            this.pivotShowRowTotalsBarItem1.Name = "pivotShowRowTotalsBarItem1";
+            // 
+            // pivotShowGrandTotalsBarItem1
+            // 
+            this.pivotShowGrandTotalsBarItem1.Id = 213;
+            this.pivotShowGrandTotalsBarItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.pivotShowColumnGrandTotalsBarItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.pivotShowRowGrandTotalsBarItem1)});
+            this.pivotShowGrandTotalsBarItem1.Name = "pivotShowGrandTotalsBarItem1";
+            this.pivotShowGrandTotalsBarItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
+            // 
+            // pivotShowColumnGrandTotalsBarItem1
+            // 
+            this.pivotShowColumnGrandTotalsBarItem1.Id = 214;
+            this.pivotShowColumnGrandTotalsBarItem1.Name = "pivotShowColumnGrandTotalsBarItem1";
+            // 
+            // pivotShowRowGrandTotalsBarItem1
+            // 
+            this.pivotShowRowGrandTotalsBarItem1.Id = 215;
+            this.pivotShowRowGrandTotalsBarItem1.Name = "pivotShowRowGrandTotalsBarItem1";
+            // 
+            // coloringOptionsRibbonPageGroup3
+            // 
+            this.coloringOptionsRibbonPageGroup3.ItemLinks.Add(this.useGlobalColorsBarItem1);
+            this.coloringOptionsRibbonPageGroup3.ItemLinks.Add(this.useLocalColorsBarItem1);
+            this.coloringOptionsRibbonPageGroup3.ItemLinks.Add(this.editActualColorsBarItem1);
+            this.coloringOptionsRibbonPageGroup3.Name = "coloringOptionsRibbonPageGroup3";
             // 
             // DesignerForm
             // 
@@ -3349,12 +3922,9 @@
         private DevExpress.DashboardWin.Bars.UndoBarItem undoBarItem1;
         private DevExpress.DashboardWin.Bars.RedoBarItem redoBarItem1;
         private DevExpress.DashboardWin.Bars.NewDataSourceBarItem newDataSourceBarItem1;
-        private DevExpress.DashboardWin.Bars.EditDataSourceBarItem editDataSourceBarItem1;
         private DevExpress.DashboardWin.Bars.RenameDataSourceBarItem renameDataSourceBarItem1;
         private DevExpress.DashboardWin.Bars.DeleteDataSourceBarItem deleteDataSourceBarItem1;
         private DevExpress.DashboardWin.Bars.ServerModeBarItem serverModeBarItem1;
-        private DevExpress.DashboardWin.Bars.AddCalculatedFieldBarItem addCalculatedFieldBarItem1;
-        private DevExpress.DashboardWin.Bars.DashboardParametersBarItem dashboardParametersBarItem1;
         private DevExpress.DashboardWin.Bars.EditDataSourceFilterBarItem editDataSourceFilterBarItem1;
         private DevExpress.DashboardWin.Bars.ClearDataSourceFilterBarItem clearDataSourceFilterBarItem1;
         private DevExpress.DashboardWin.Bars.InsertPivotBarItem insertPivotBarItem1;
@@ -3378,7 +3948,6 @@
         private DevExpress.DashboardWin.Bars.InsertGroupBarItem insertGroupBarItem1;
         private DevExpress.DashboardWin.Bars.DuplicateItemBarItem duplicateItemBarItem1;
         private DevExpress.DashboardWin.Bars.DeleteItemBarItem deleteItemBarItem1;
-        private DevExpress.DashboardWin.Bars.ConvertDashboardItemTypeBarItem convertDashboardItemTypeBarItem1;
         private DevExpress.DashboardWin.Bars.ConvertToPivotBarItem convertToPivotBarItem1;
         private DevExpress.DashboardWin.Bars.ConvertToGridBarItem convertToGridBarItem1;
         private DevExpress.DashboardWin.Bars.ConvertToChartBarItem convertToChartBarItem1;
@@ -3672,12 +4241,84 @@
         private DevExpress.DashboardWin.Bars.QuickAccessHistoryRibbonPageGroup quickAccessHistoryRibbonPageGroup1;
         private DevExpress.DashboardWin.Bars.DataSourceRibbonPage dataSourceRibbonPage1;
         private DevExpress.DashboardWin.Bars.DataSourceRibbonPageGroup dataSourceRibbonPageGroup1;
-        private DevExpress.DashboardWin.Bars.DataSourceElementsRibbonPageGroup dataSourceElementsRibbonPageGroup1;
         private DevExpress.DashboardWin.Bars.DataSourceFilteringRibbonPageGroup dataSourceFilteringRibbonPageGroup1;
         private DevExpress.DashboardWin.Bars.ViewRibbonPage viewRibbonPage1;
         private DevExpress.DashboardWin.Bars.SkinsRibbonPageGroup skinsRibbonPageGroup1;
         private DevExpress.DashboardWin.DashboardPopupMenu dashboardPopupMenu1;
         private DevExpress.DashboardWin.Bars.DashboardBarController dashboardBarController1;
+        private DevExpress.DashboardWin.Bars.EditSqlConnectionBarItem editSqlConnectionBarItem1;
+        private DevExpress.DashboardWin.Bars.EditOlapConnectionBarItem editOlapConnectionBarItem1;
+        private DevExpress.DashboardWin.Bars.EditObjectDataSourceBarItem editObjectDataSourceBarItem1;
+        private DevExpress.DashboardWin.Bars.EditEFDataSourceBarItem editEFDataSourceBarItem1;
+        private DevExpress.DashboardWin.Bars.EditRulesBarItem editRulesBarItem1;
+        private DevExpress.DashboardWin.Bars.FilterElementShowAllValueBarItem filterElementShowAllValueBarItem1;
+        private DevExpress.DashboardWin.Bars.FilterElementItemOptionsRibbonPageGroup filterElementItemOptionsRibbonPageGroup1;
+        private DevExpress.DashboardWin.Bars.ConvertToPivotBarItem convertToPivotBarItem2;
+        private DevExpress.DashboardWin.Bars.ConvertToGridBarItem convertToGridBarItem2;
+        private DevExpress.DashboardWin.Bars.ConvertToChartBarItem convertToChartBarItem2;
+        private DevExpress.DashboardWin.Bars.ConvertToPieBarItem convertToPieBarItem2;
+        private DevExpress.DashboardWin.Bars.ConvertToGaugeBarItem convertToGaugeBarItem2;
+        private DevExpress.DashboardWin.Bars.ConvertToCardBarItem convertToCardBarItem2;
+        private DevExpress.DashboardWin.Bars.ConvertToChoroplethMapBarItem convertToChoroplethMapBarItem2;
+        private DevExpress.DashboardWin.Bars.ConvertGeoPointMapBaseBarItem convertGeoPointMapBaseBarItem2;
+        private DevExpress.DashboardWin.Bars.ConvertToGeoPointMapBarItem convertToGeoPointMapBarItem2;
+        private DevExpress.DashboardWin.Bars.ConvertToBubbleMapBarItem convertToBubbleMapBarItem2;
+        private DevExpress.DashboardWin.Bars.ConvertToPieMapBarItem convertToPieMapBarItem2;
+        private DevExpress.DashboardWin.Bars.ConvertToRangeFilterBarItem convertToRangeFilterBarItem2;
+        private DevExpress.DashboardWin.Bars.ConvertToComboBoxBarItem convertToComboBoxBarItem2;
+        private DevExpress.DashboardWin.Bars.ConvertToListBoxBarItem convertToListBoxBarItem2;
+        private DevExpress.DashboardWin.Bars.ConvertToTreeViewBarItem convertToTreeViewBarItem2;
+        private DevExpress.DashboardWin.Bars.EditExcelDataSourceBarItem editExcelDataSourceBarItem1;
+        private DevExpress.DashboardWin.Bars.AddCalculatedFieldBarItem addCalculatedFieldBarItem1;
+        private DevExpress.DashboardWin.Bars.AddQueryBarItem addQueryBarItem1;
+        private DevExpress.DashboardWin.Bars.EditQueryBarItem editQueryBarItem1;
+        private DevExpress.DashboardWin.Bars.RenameQueryBarItem renameQueryBarItem1;
+        private DevExpress.DashboardWin.Bars.EditQueryFilterBarItem editQueryFilterBarItem1;
+        private DevExpress.DashboardWin.Bars.DeleteQueryBarItem deleteQueryBarItem1;
+        private DevExpress.DashboardWin.Bars.InsertScatterChartBarItem insertScatterChartBarItem1;
+        private DevExpress.DashboardWin.Bars.ConvertDashboardItemTypeBarItem convertDashboardItemTypeBarItem1;
+        private DevExpress.DashboardWin.Bars.DashboardParametersBarItem dashboardParametersBarItem1;
+        private DevExpress.DashboardWin.Bars.DashboardAutomaticUpdatesBarItem dashboardAutomaticUpdatesBarItem1;
+        private DevExpress.DashboardWin.Bars.UpdateDataBarItem updateDataBarItem1;
+        private DevExpress.DashboardWin.Bars.ScatterChartRotateBarItem scatterChartRotateBarItem1;
+        private DevExpress.DashboardWin.Bars.ScatterChartXAxisSettingsBarItem scatterChartXAxisSettingsBarItem1;
+        private DevExpress.DashboardWin.Bars.ScatterChartYAxisSettingsBarItem scatterChartYAxisSettingsBarItem1;
+        private DevExpress.DashboardWin.Bars.ScatterChartShowLegendBarItem scatterChartShowLegendBarItem1;
+        private DevExpress.DashboardWin.Bars.GalleryScatterChartLegendPositionItem galleryScatterChartLegendPositionItem1;
+        private DevExpress.DashboardWin.Bars.ScatterChartPointLabelOptionsBarItem scatterChartPointLabelOptionsBarItem1;
+        private DevExpress.DashboardWin.Bars.PivotShowTotalsBarItem pivotShowTotalsBarItem1;
+        private DevExpress.DashboardWin.Bars.PivotShowColumnTotalsBarItem pivotShowColumnTotalsBarItem1;
+        private DevExpress.DashboardWin.Bars.PivotShowRowTotalsBarItem pivotShowRowTotalsBarItem1;
+        private DevExpress.DashboardWin.Bars.PivotShowGrandTotalsBarItem pivotShowGrandTotalsBarItem1;
+        private DevExpress.DashboardWin.Bars.PivotShowColumnGrandTotalsBarItem pivotShowColumnGrandTotalsBarItem1;
+        private DevExpress.DashboardWin.Bars.PivotShowRowGrandTotalsBarItem pivotShowRowGrandTotalsBarItem1;
+        private DevExpress.DashboardWin.Bars.ScatterChartToolsRibbonPageCategory scatterChartToolsRibbonPageCategory1;
+        private DevExpress.DashboardWin.Bars.DataRibbonPage dataRibbonPage14;
+        private DevExpress.DashboardWin.Bars.FilteringRibbonPageGroup filteringRibbonPageGroup13;
+        private DevExpress.DashboardWin.Bars.MasterFilterRibbonPageGroup masterFilterRibbonPageGroup11;
+        private DevExpress.DashboardWin.Bars.InteractivitySettingsRibbonPageGroup interactivitySettingsRibbonPageGroup13;
+        private DevExpress.DashboardWin.Bars.DashboardItemDesignRibbonPage dashboardItemDesignRibbonPage16;
+        private DevExpress.DashboardWin.Bars.CommonItemDesignRibbonPageGroup commonItemDesignRibbonPageGroup16;
+        private DevExpress.DashboardWin.Bars.ScatterChartLayoutPageGroup scatterChartLayoutPageGroup1;
+        private DevExpress.DashboardWin.Bars.ScatterChartLegendPositionPageGroup scatterChartLegendPositionPageGroup1;
+        private DevExpress.DashboardWin.Bars.ScatterChartPointLabelPageGroup scatterChartPointLabelPageGroup1;
+        private DevExpress.DashboardWin.Bars.ColoringOptionsRibbonPageGroup coloringOptionsRibbonPageGroup3;
+        private DevExpress.DashboardWin.Bars.SqlDataSourceQueryRibbonPageGroup sqlDataSourceQueryRibbonPageGroup1;
+        private DevExpress.DashboardWin.Bars.ConvertToPivotBarItem convertToPivotBarItem3;
+        private DevExpress.DashboardWin.Bars.ConvertToGridBarItem convertToGridBarItem3;
+        private DevExpress.DashboardWin.Bars.ConvertToChartBarItem convertToChartBarItem3;
+        private DevExpress.DashboardWin.Bars.ConvertToPieBarItem convertToPieBarItem3;
+        private DevExpress.DashboardWin.Bars.ConvertToGaugeBarItem convertToGaugeBarItem3;
+        private DevExpress.DashboardWin.Bars.ConvertToCardBarItem convertToCardBarItem3;
+        private DevExpress.DashboardWin.Bars.ConvertToChoroplethMapBarItem convertToChoroplethMapBarItem3;
+        private DevExpress.DashboardWin.Bars.ConvertGeoPointMapBaseBarItem convertGeoPointMapBaseBarItem3;
+        private DevExpress.DashboardWin.Bars.ConvertToGeoPointMapBarItem convertToGeoPointMapBarItem3;
+        private DevExpress.DashboardWin.Bars.ConvertToBubbleMapBarItem convertToBubbleMapBarItem3;
+        private DevExpress.DashboardWin.Bars.ConvertToPieMapBarItem convertToPieMapBarItem3;
+        private DevExpress.DashboardWin.Bars.ConvertToRangeFilterBarItem convertToRangeFilterBarItem3;
+        private DevExpress.DashboardWin.Bars.ConvertToComboBoxBarItem convertToComboBoxBarItem3;
+        private DevExpress.DashboardWin.Bars.ConvertToListBoxBarItem convertToListBoxBarItem3;
+        private DevExpress.DashboardWin.Bars.ConvertToTreeViewBarItem convertToTreeViewBarItem3;
 
     }
 }
