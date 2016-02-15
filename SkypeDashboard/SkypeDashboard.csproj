@@ -245,7 +245,6 @@
     <EmbeddedResource Include="DesignerForm.resx">
       <DependentUpon>DesignerForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Skype_dashboardcs.resx">
       <DependentUpon>Skype_dashboardcs.cs</DependentUpon>
     </EmbeddedResource>
