@@ -26,10 +26,12 @@ namespace SkypeDashboard {
                 foreach(var cm in (
                            from m in this.Messages
                            join c in this.Conversations on m.convo_id equals c.id
-                           
-                           select new { m.id, c.displayname, m.from_dispname, m.body_xml, m.timestamp, ChatID = c.id }))
-                    if(ViewerForm.ChatIds!=null && ViewerForm.ChatIds.Any(id => id == cm.ChatID))
-                           yield return new ConvertedMessage() { id = cm.id, ChatName = cm.displayname, Author = ConvertedMessage.ConvertAuthor(cm.from_dispname), BodyXml = cm.body_xml, DateTime = UnixTimeStampToDateTime(Convert.ToDouble(cm.timestamp)) };                
+
+                           select new { m.id, c.displayname, m.from_dispname, m.body_xml, m.timestamp, ChatID = c.id })) {
+                    IList<long> ids = ViewerForm.ChatIds != null ? ViewerForm.ChatIds : ChatsOnly.Select(c => c.id).ToList();
+                    if(ids.Any(id => id == cm.ChatID))
+                        yield return new ConvertedMessage() { id = cm.id, ChatName = cm.displayname, Author = ConvertedMessage.ConvertAuthor(cm.from_dispname), BodyXml = cm.body_xml, DateTime = UnixTimeStampToDateTime(Convert.ToDouble(cm.timestamp)) };
+                }
             }
         }
 

@@ -48,6 +48,7 @@ namespace SkypeDashboard {
             IParameter param = e.Parameters.Where(p => p.Name == "Chat").FirstOrDefault();
             if(param != null) {
                 IEnumerable chats = param.Value as IEnumerable;
+                
                 ViewerForm.chatIds = new List<long>();
                 foreach(object value in chats) {
                     try {
@@ -55,9 +56,13 @@ namespace SkypeDashboard {
                     } catch {
 
                     }
-
-
                 }
+            }
+        }
+
+        private void dashboardViewer1_DashboardLoaded(object sender, DevExpress.DashboardWin.DashboardLoadedEventArgs e) {
+            using(var mainEntities = new mainEntities()) {
+                e.Dashboard.Parameters[0].Value = mainEntities.ChatsOnly.Select(c => c.id).ToArray();
             }
         }
     }
